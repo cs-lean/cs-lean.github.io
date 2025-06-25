@@ -8,8 +8,8 @@ on:
   schedule:
     - cron: '0 */12 * * *'
 
-env:
-  LAKE_NO_CACHE: true
+# env:
+#   LAKE_NO_CACHE: true
 
 jobs:
 
@@ -34,10 +34,10 @@ jobs:
         run: |
           elan default $(cat lean-toolchain)
     
-      - name: Get cache
-        working-directory: cslib/docs
-        run: |
-          lake exe cache get
+      # - name: Get cache
+      #   working-directory: cslib/docs
+      #   run: |
+      #     lake exe cache get
       
       - name: Build docs
         working-directory: cslib/docs
