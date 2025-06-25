@@ -1,0 +1,57 @@
+name: Update cslib documentation
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+  schedule:
+    - cron: '0 */12 * * *'
+
+jobs:
+
+  build-docs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout cslib
+        uses: actions/checkout@v4
+        with:
+          repository: cs-lean/cslib
+          path: cslib
+      
+      - name: Install elan
+        run: |
+          set -o pipefail
+          curl https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -sSf | sh -s -- --default-toolchain none -y
+          echo "$HOME/.elan/bin" >> $GITHUB_PATH
+
+      - name: Build docs
+        working-directory: cslib/docs
+        run: |
+          elan default $(cat lean-toolchain)
+          env LEAN_ABORT_ON_PANIC=1 lake build Cslib:docs
+
+      - name: Upload pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: 'cslib/docs/doc'
+
+  deploy:
+    needs: build-docs
+
+    permissions:
+      pages: write
+      id-token: write
+    
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy to GitHub Pages
+        if: github.ref == 'refs/heads/main'
+        id: deployment
+        uses: actions/deploy-pages@v4
