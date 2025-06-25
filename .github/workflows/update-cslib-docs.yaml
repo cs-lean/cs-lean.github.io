@@ -29,11 +29,19 @@ jobs:
           curl https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -sSf | sh -s -- --default-toolchain none -y
           echo "$HOME/.elan/bin" >> $GITHUB_PATH
 
-      - name: Build docs
+      - name: Set up elan
         working-directory: cslib/docs
         run: |
           elan default $(cat lean-toolchain)
+    
+      - name: Get cache
+        working-directory: cslib/docs
+        run: |
           lake exe cache get
+      
+      - name: Build docs
+        working-directory: cslib/docs
+        run: |
           env LEAN_ABORT_ON_PANIC=1 lake build Cslib:docs
 
       - name: Upload pages artifact
