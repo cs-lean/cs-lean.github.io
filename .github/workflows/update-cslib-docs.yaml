@@ -30,6 +30,7 @@ jobs:
         working-directory: cslib/docs
         run: |
           elan default $(cat lean-toolchain)
+          lake exe cache get
           env LEAN_ABORT_ON_PANIC=1 lake build Cslib:docs
 
       - name: Upload pages artifact
