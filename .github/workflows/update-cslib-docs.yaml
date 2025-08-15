@@ -20,7 +20,7 @@ jobs:
       - name: Checkout cslib
         uses: actions/checkout@v4
         with:
-          repository: cs-lean/cslib
+          repository: leanprover/cslib
           path: cslib
       
       - name: Install elan
