@@ -17,42 +17,53 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout cs-lean.github.io
+        uses: actions/checkout@v4
+
       - name: Checkout cslib
         uses: actions/checkout@v4
         with:
           repository: leanprover/cslib
           path: cslib
-      
+
       - name: Install elan
         run: |
           set -o pipefail
           curl https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -sSf | sh -s -- --default-toolchain none -y
           echo "$HOME/.elan/bin" >> $GITHUB_PATH
 
-      - name: Set up elan
+      - name: Set up elan for website
+        run: |
+          elan default $(cat lean-toolchain)
+
+      - name: Build website
+        run: |
+          lake run generate
+
+      - name: Set up elan for cslib docs
         working-directory: cslib/docs
         run: |
           elan default $(cat lean-toolchain)
-    
+
       # - name: Get cache
       #   working-directory: cslib/docs
       #   run: |
       #     lake exe cache get
-      
-      - name: Build docs
+
+      - name: Build cslib docs
         working-directory: cslib/docs
         run: |
           env LEAN_ABORT_ON_PANIC=1 lake build Cslib:docs
 
       - name: Prepare docs in api folder
         run: |
-          mkdir -p site/api
-          cp -r cslib/docs/doc/* site/api/
-          
+          mkdir -p _cslib.org/api
+          cp -r cslib/docs/doc/* _cslib.org/api/
+
       - name: Upload pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'site'
+          path: '_cslib.org'
 
   deploy:
     needs: build-docs
