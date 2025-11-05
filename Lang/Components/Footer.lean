@@ -38,7 +38,7 @@ def footer [MonadStateOf Component.State m] [Monad m] : m Html := do
             <ul class="footer-links">
                 <li><a href="https://lean-lang.org/doc/reference/latest/" class="footer-text">"Language reference"</a></li>
                 <li><a href="https://cs-lean.github.io/" class="footer-text">"CSLib API"</a></li>
-                <li><a href="https://leanprover-community.github.io/mathlib4_docs/" class="footer-text">"Mathlib AP"</a></li>
+                <li><a href="https://leanprover-community.github.io/mathlib4_docs/" class="footer-text">"Mathlib API"</a></li>
             </ul>
         </nav>
 

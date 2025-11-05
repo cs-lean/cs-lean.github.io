@@ -30,14 +30,6 @@ script generate (args) do
     IO.eprintln "No args expected"
     return 1
 
-  let code ← IO.Process.Child.wait <| ← IO.Process.spawn {
-    cmd := "./scripts/create-fro-redirect.sh",
-    args := #[]
-  }
-
-  if code != 0 then
-    return code
-
   let code ← IO.Process.Child.wait 
     <| ← IO.Process.spawn {cmd := "lake", args := #["exe", "cslib", "--output", "_cslib.org"]}
   if code != 0 then

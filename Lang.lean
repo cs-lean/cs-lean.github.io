@@ -11,8 +11,6 @@ def langSite : Site :=
     static "static" ← "static"
     static "papers" ← "static/papers"
 
-    static "netlify.toml" ← "netlify.toml"
-
     "404" Lang.Pages.«404»
 
     "about" Lang.Pages.About
