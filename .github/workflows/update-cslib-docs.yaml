@@ -40,25 +40,25 @@ jobs:
         run: |
           lake run generate
 
-      - name: Set up elan for cslib docs
-        working-directory: cslib/docs
-        run: |
-          elan default $(cat lean-toolchain)
+      # - name: Set up elan for cslib docs
+      #   working-directory: cslib/docs
+      #   run: |
+      #     elan default $(cat lean-toolchain)
 
       # - name: Get cache
       #   working-directory: cslib/docs
       #   run: |
       #     lake exe cache get
 
-      - name: Build cslib docs
-        working-directory: cslib/docs
-        run: |
-          env LEAN_ABORT_ON_PANIC=1 lake build Cslib:docs
+      # - name: Build cslib docs
+      #   working-directory: cslib/docs
+      #   run: |
+      #     env LEAN_ABORT_ON_PANIC=1 lake build Cslib:docs
 
-      - name: Prepare docs in api folder
-        run: |
-          mkdir -p _cslib.org/api
-          cp -r cslib/docs/doc/* _cslib.org/api/
+      # - name: Prepare docs in api folder
+      #   run: |
+      #     mkdir -p _cslib.org/api
+      #     cp -r cslib/docs/doc/* _cslib.org/api/
 
       - name: Upload pages artifact
         uses: actions/upload-pages-artifact@v3
