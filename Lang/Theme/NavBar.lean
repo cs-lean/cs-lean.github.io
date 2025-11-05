@@ -17,7 +17,8 @@ def buildNavBar : TemplateM Html := do
   -- let path ← currentPath
 
   let outItems :=
-    #[ { title := "Mathlib", url := "https://mathlib-initiative.org/" },
+    #[ { title := "Lean", url := "https://lean-lang.org/" },
+       { title := "Mathlib", url := "https://mathlib-initiative.org/" },
        { title := "Playground", url := "https://live.lean-lang.org/" },
        { title := "Reservoir", url := "https://reservoir.lean-lang.org/" } ]
 
