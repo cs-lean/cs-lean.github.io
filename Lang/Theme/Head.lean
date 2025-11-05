@@ -126,7 +126,7 @@ def head (siteName : String) (config : HeadConfig) (social : Option SocialMeta :
 
       {{
         if page == []
-          then {{ <title> "Lean enables correct, maintainable, and formally verified code" </title> }}
+          then {{ <title> "A Focused Effort on Formalizing Computer Science in Lean" </title> }}
           else {{ <title>{{ title }} s!" — {siteName} "</title> }}
       }}
 
