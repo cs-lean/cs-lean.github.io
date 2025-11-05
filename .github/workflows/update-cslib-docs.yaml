@@ -44,10 +44,15 @@ jobs:
         run: |
           env LEAN_ABORT_ON_PANIC=1 lake build Cslib:docs
 
+      - name: Prepare docs in api folder
+        run: |
+          mkdir -p site/api
+          cp -r cslib/docs/doc/* site/api/
+          
       - name: Upload pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'cslib/docs/doc'
+          path: 'site'
 
   deploy:
     needs: build-docs

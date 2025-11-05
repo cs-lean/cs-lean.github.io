@@ -1,0 +1,9 @@
+build/
+src/
+/lakefile.olean
+/lake-packages/*
+_*
+.DS_Store
+.lake
+
+ISSUES.org
