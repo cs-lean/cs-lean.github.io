@@ -44,13 +44,13 @@ def isPagePost : List String → Bool
   | _ => false
 
 def home : SocialMeta :=
-  { title := "Lean Programming Language",
-    description := "Lean is an open-source programming language and proof assistant that enables correct, maintainable, and formally verified code.",
+  { title := "CSLib",
+    description := "A Focused Effort on Formalizing Computer Science in Lean",
     image := "https://lean-lang.org/static/png/banner.png",
-    url := "https://lean-lang.org",
-    siteName := "Lean Language",
-    alt := "Lean Programming Language",
-    articleCreator := "@leanprover",
+    url := "https://cs-lean.github.io",
+    siteName := "CSLib",
+    alt := "CSLib",
+    articleCreator := "@cslib",
   }
 
 def config : HeadConfig :=
