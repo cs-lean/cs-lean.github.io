@@ -378,16 +378,14 @@ a.primary:focus {
     }
 }
 
-.reveal,
-.org-hero {
+.reveal {
     opacity: 0;
     animation-delay: var(--animation-delay);
     transform: translateY(20px);
     transition: opacity var(--transition-slow) ease-out, transform var(--transition-slow) ease-out;
 }
 
-.reveal.active,
-.org-hero.active {
+.reveal.active {
     opacity: 1;
     transform: translateY(0);
 }
@@ -465,8 +463,7 @@ div#calendar-container {
 
 @media (scripting: none) or (prefers-reduced-motion) {
 
-    .reveal,
-    .org-hero {
+    .reveal {
         opacity: 1;
         transform: translateY(0);
     }

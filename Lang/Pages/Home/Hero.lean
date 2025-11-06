@@ -17,8 +17,7 @@ namespace Home
 
 block_component +directive hero where
   cssFiles := #[
-    ("hero.css", include_str "../../../static/css/hero.css"),
-    ("org-hero.css", include_str "../../../static/css/org-hero.css")
+    ("hero.css", include_str "../../../static/css/hero.css")
   ]
 
   toHtml _id _json _goI _goB _content := do
@@ -39,7 +38,6 @@ block_component +directive hero where
               </div>
             </div>
             <div class="hero-right">
-            <div class="hero-radial-blur" />
               <ul class="focus-list">
                 <li><i>{{ Icon.clock (fill := "white") }}</i>
                  <div class="text"><strong>"Formalizing CS Foundations"</strong>

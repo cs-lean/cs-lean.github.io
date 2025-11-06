@@ -36,7 +36,7 @@ def jim : Member := {
 }
 
 def kohli : Member := {
-  url := "/static/team/shadow.jpg",
+  url := "/static/team/pushmeet-kohli.jpg",
   name := "Pushmeet Kohli",
   role := "Google DeepMind",
 }
