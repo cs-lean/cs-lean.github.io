@@ -19,8 +19,7 @@ def langSite : Site :=
 
     "roadmap" Lang.Pages.Roadmap
 
-    "team" Lang.Pages.Team
-    "contact" Lang.Pages.Contact
+    "Governance" Lang.Pages.Governance
 
     "privacy" Lang.Pages.PrivacyPolicy
     "terms" Lang.Pages.TermsOfUse

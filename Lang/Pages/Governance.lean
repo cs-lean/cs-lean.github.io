@@ -57,7 +57,23 @@ def sorrachai : Member := {
 
 def techLeads : Array Member := #[arademaker, sorrachai]
 
-def teamData := #[("teamMembers", teamMembers), ("techLeads", techLeads)]
+
+def kim : Member := {
+  url := "/static/team/kim.jpg",
+  name := "Kim Morrison",
+  role := "Lean FRO. Continuous Integration and Deployment (CI/CD) with upstream (Lean, mathlib)",
+}
+
+def henson : Member := {
+  url := "/static/team/chris-henson.jpg",
+  name := "Chris Henson",
+  role := "Drexel University. Lambda calculus, metaprogramming",
+}
+
+
+def areaMaintainers : Array Member := #[henson, kim]
+
+def teamData := #[("teamMembers", teamMembers), ("techLeads", techLeads), ("areaMaintainers",areaMaintainers)]
 
 block_component +directive teamDiv (whichTeam : String) where
   toHtml _id _json _goI _goB _contents := do
@@ -73,7 +89,7 @@ block_component +directive teamDiv (whichTeam : String) where
     }}
 
 
-#doc (Page) "Team" =>
+#doc (Page) "Governance" =>
 
 %%%
 showInNav := true
@@ -113,5 +129,12 @@ Technical leads guide long-term developments that may span multiple areas of the
 
 Area maintainers are trusted contributors who take ownership of specific areas of the codebase, supporting their growth both as subject-matter experts and reviewers.
 
-- Chris Henson (@chenson2018), Drexel University. Areas: Lambda calculus, metaprogramming.
-- Kim Morrison (@kim-em), Lean FRO. Areas: Continuous Integration and Deployment (CI/CD) with upstream (Lean, mathlib).
+:::teamDiv "areaMaintainers"
+:::
+
+# Contact
+
+The best option is to post your question or message in the [CSLib Zulip channel](https://leanprover.zulipchat.com/#narrow/channel/513188-CSLib).
+You can also open an issue on the [CSLib repository](https://github.com/leanprover/cslib).
+Alternatively, you may contact one of the [team members](/team/).
+

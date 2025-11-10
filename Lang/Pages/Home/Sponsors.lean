@@ -13,17 +13,17 @@ namespace Page
 namespace Home
 
 def sponsorsContent : Array Sponsor := #[
-  { name := "Amazon", logo := "/static/png/amazon.png", link := "https://www.sloan.org/" },
-  { name := "Google", logo := "/static/png/google.png", link := "https://www.convergentresearch.org/" }
+  { name := "Amazon", logo := "/static/png/amazon.png", link := "https://www.amazon.com" },
+  { name := "Google", logo := "/static/png/google.png", link := "https://www.google.com" },
+  { name := "University of Southern Denmark", logo := "/static/png/sdu.png", link := "https://www.sdu.dk/" }
 ]
 
 block_component +directive sponsors where
   toHtml _ _ _ _ _ := do
     let sponsors : Array Html ← sponsorsContent.mapM sponsor
-
     return {{
       <section class="sponsors section-container reveal active container" aria-label="Sponsors">
-        {{ ← Components.sectionTitle "SUPPORTERS" "Sponsors and Partners" none }}
+        {{ ← Components.sectionTitle "SUPPORTERS" "" none }}
         <div class="sponsors-content">
           {{ sponsors }}
         </div>

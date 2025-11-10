@@ -24,21 +24,19 @@ def footer [MonadStateOf Component.State m] [Monad m] : m Html := do
         </nav>
 
         <nav class="footer-column" aria-label="LEAN">
-          <h3 id="get-started" class="footer-heading">"Get Started"</h3>
+          <h3 id="get-started" class="footer-heading">"Lean Language"</h3>
           <ul class="footer-links">
             <li><a href="https://lean-lang.org/install/" class="footer-text">"Install"</a></li>
             <li><a href="https://lean-lang.org/learn/" class="footer-text">"Learn"</a></li>
             <li><a href="https://lean-lang.org/community/" class="footer-text">"Community"</a></li>
-            <li><a href="https://reservoir.lean-lang.org/" class="footer-text">"Reservoir"</a></li>
           </ul>
         </nav>
 
         <nav class="footer-column" aria-label="Documentation">
             <h3 id="documentation" class="footer-heading">"Documentation"</h3>
             <ul class="footer-links">
-                <li><a href="https://lean-lang.org/doc/reference/latest/" class="footer-text">"Language reference"</a></li>
                 <li><a href="https://cs-lean.github.io/" class="footer-text">"CSLib API"</a></li>
-                <li><a href="https://leanprover-community.github.io/mathlib4_docs/" class="footer-text">"Mathlib API"</a></li>
+                <li><a href="https://lean-lang.org/doc/reference/latest/" class="footer-text">"Lean Language Reference"</a></li>
             </ul>
         </nav>
 
@@ -46,8 +44,10 @@ def footer [MonadStateOf Component.State m] [Monad m] : m Html := do
             <h3 id="resources" class="footer-heading">"Resources"</h3>
             <ul class="footer-links">
                 <li><a href="https://live.lean-lang.org/" class="footer-text">"Lean playground"</a></li>
-                <li><a href="https://marketplace.visualstudio.com/items?itemName=leanprover.lean4" class="footer-text">"VS Code extension"</a></li>
+                <li><a href="https://marketplace.visualstudio.com/items?itemName=leanprover.lean4" class="footer-text">
+                "VS Code extension"</a></li>
                 <li><a href="https://loogle.lean-lang.org/" class="footer-text">"Loogle"</a></li>
+                <li><a href="https://reservoir.lean-lang.org/" class="footer-text">"Reservoir"</a></li>     
                 <li><a href="https://github.com/leanprover-community/mathlib4" class="footer-text">"Mathlib"</a></li>
             </ul>
         </nav>
