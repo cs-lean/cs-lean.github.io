@@ -25,7 +25,7 @@ block_component +directive hero where
           <div class="hero-content">
             <div class="hero-left">
               <div class="hero-branding reveal">
-                {{ Icon.cslibLogo "#686868" (some 300) (some 120) (strokeWidth := 4) }}
+                {{ Icon.cslibLogo "#686868" (some 600) (some 240) (strokeWidth := 4) }}
                 <p class="hero-tagline reveal transition-delay-medium">
                   "A Focused Effort on Formalizing Computer Science in Lean"
                 </p>

@@ -19,7 +19,7 @@ def footer [MonadStateOf Component.State m] [Monad m] : m Html := do
       <div class="footer-grid container">
         <nav class="footer-column" aria-label="LEAN">
           <a href=".">
-            {{ Icon.cslibLogo "white" (some 80) (some 40) (strokeWidth := 10) }}
+            {{ Icon.cslibLogo "white" (some 300) (some 80) (strokeWidth := 10) }}
           </a>
         </nav>
 
