@@ -16,7 +16,7 @@ block_component +directive zulipBanner where
 
   toHtml _ _ _ _ _ := do
     return {{
-      <article href="." class="card card-item zulip-info white-blue-gradient">
+      <article href="." class="card card-item zulip-info white-brown-gradient">
         <img class="hexapus" src="/static/png/hexapus.png" aria-hidden="true" />
         <div class="zulip-card-content">
           <div class="zulip-card-title"> "Connect with Lean experts!" </div>

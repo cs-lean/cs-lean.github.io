@@ -43,7 +43,7 @@ body {
 .hero-tagline {
     margin-top: var(--space-2);
     font-size: var(--fs-md);
-    color: var(--color-muted);
+    color: var(--color-text-dark);
     line-height: 1.4;
     font-weight: 400;
 }
@@ -64,8 +64,30 @@ body {
     width: 170px;
 }
 
-.hero-button.primary svg {
-    fill: var(--color-text-contrast);
+.hero-button.primary {
+    background-color: #333;
+}
+
+.hero-button.primary:hover {
+    background-color: #444 !important;
+}
+
+.hero-button.secondary {
+    border-color: #333;
+    color: #333;
+}
+
+.hero-button.secondary svg {
+    fill: #333;
+}
+
+.hero-button.secondary:hover {
+    background-color: #444 !important;
+    color: white;
+}
+
+.hero-button.secondary:hover svg {
+    fill: white
 }
 
 .learn-button,
@@ -526,3 +548,41 @@ focus-list strong {
     font-weight: 600;
 }
 
+#cslib-hero {
+    background: var(--color-primary);
+    padding: 100px 50px;
+    margin: 0px 30px;
+    margin-top: 60px;
+    border-radius: 10px;
+}
+
+.focus-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.focus-list li {
+    margin-bottom: 12px;
+    display: flex;
+    font-size: 0.9rem;
+    line-height: 1.3;
+    gap: 30px;
+    padding: 10px 0px;
+    border-radius: 10px;
+    color: var(--color-text-dark);
+}
+
+.focus-list li:last-child {
+    margin-bottom: 0;
+}
+
+.focus-list strong {
+    color: var(--color-text-dark);
+    font-size: 0.95rem;
+    font-weight: 600;
+}

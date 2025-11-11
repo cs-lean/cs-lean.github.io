@@ -127,7 +127,7 @@ def cslibLogo (fill : String := "#000") (width : Option Nat := none) (height : O
   let heightStr := height.map toString
   ⟨.cslibLogo, { fill := some fill, width := widthStr, height := heightStr, strokeWidth := some strokeWidth }⟩
 
-def textIcon (content : String := "?") (fill : String := "#386EE0") (fontSize : String := "40px") : Icon :=
+def textIcon (content : String := "?") (fill : String := "var(--color-primary)") (fontSize : String := "40px") : Icon :=
   ⟨.text content, { fill := some fill, fontSize := some fontSize }⟩
 
 private def setOptionalAttr (attr : String) (value : Option String) : Html → Html
@@ -176,7 +176,7 @@ private def renderCslibLogo (params : IconParams) : Html :=
   |> setOptionalAttr "height" params.height
 
 private def renderTextIcon (content : String) (params : IconParams) : Html :=
-  let color := params.fill.getD "#386EE0"
+  let color := params.fill.getD "var(--color-primary)"
   let fontSize := params.fontSize.getD "40px"
   {{
     <i style=s!"width:{fontSize};height:{fontSize};color:{color};font-size:{fontSize};font-weight:500">
@@ -272,7 +272,7 @@ def generateRender (icon : Icon) : IO Html := do
     | .team | .handShake | .rocket | .githubLogo | .blueskyLogo | .arrowRight
     | .linkedinLogo | .mastodonLogo | .xLogo | .zulipLogo => htmlContent.asString
     | .text content =>
-      let color := params.fill.getD "#386EE0"
+      let color := params.fill.getD "var(--color-primary)"
       let fontSize := params.fontSize.getD "40px"
       let size := fontSize.replace "px" ""
       s!"<svg width=\"{size}\" height=\"{size}\" viewBox=\"0 0 {size} {size}\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"50%\" y=\"50%\" text-anchor=\"middle\" dy=\".3em\" fill=\"{color}\" font-size=\"{fontSize}\" font-weight=\"500\">{content}</text></svg>"

@@ -4,9 +4,9 @@
      shape-rendering="geometricPrecision"
      text-rendering="geometricPrecision" cached="false">
   <g transform="translate(5 15)">
-    <path d="M45,15h-30v90h30" transform="matrix(1.321443 0 0 1.222222-9.64329-13.33332)" fill="none" stroke="#12234e" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M80,20h-20v37h30v43h-30" transform="matrix(1.393879 0 0 1.125-22.794979-7.5)" fill="none" stroke="#12234e" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M120,15v85h35" transform="matrix(1.155986 0 0 1.238049-13.71832-13.570725)" fill="none" stroke="#12234e" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M185,50v50m0-70v5" transform="matrix(-1 0 0 1.275927 370-17.935255)" fill="none" stroke="#12234e" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M210,5v95m0-50h25v40q0,10-10,10h-15" transform="matrix(1.402587 0 0 1.203314-89.575607-10.673985)" fill="none" stroke="#12234e" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M45,15h-30v90h30" transform="matrix(1.321443 0 0 1.222222-9.64329-13.33332)" fill="none" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M80,20h-20v37h30v43h-30" transform="matrix(1.393879 0 0 1.125-22.794979-7.5)" fill="none" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M120,15v85h35" transform="matrix(1.155986 0 0 1.238049-13.71832-13.570725)" fill="none" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M185,50v50m0-70v5" transform="matrix(-1 0 0 1.275927 370-17.935255)" fill="none" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M210,5v95m0-50h25v40q0,10-10,10h-15" transform="matrix(1.402587 0 0 1.203314-89.575607-10.673985)" fill="none" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
 </g></svg>
