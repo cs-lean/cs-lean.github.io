@@ -79,25 +79,25 @@ html {
     --z-header: 1000;
 
     /* Colors */
-    --color-surface: #fff;
-    --color-primary: #386EE0;
-    --color-primary-focus: #1D4ED8;
-    --color-primary-light: #4a90e2;
-    --color-secondary: #607D8B;
-    --color-text: #333;
-    --color-text-contrast: white;
-    --color-text-light: #64748b;
-    --color-muted: #607D8B;
-    --color-bg: #F9FBFD;
-    --color-bg-translucent: rgba(249, 251, 253, 0.81);
+    --color-surface: #E6CCB2;
+    --color-primary: #B08968;
+    --color-primary-focus: #9C6644;
+    --color-primary-light: #DDB892;
+    --color-secondary: #7F5539;
+    --color-text: #3B2A20;
+    --color-text-contrast: #fff;
+    --color-text-light: #7F5539;
+    --color-text-dark: #3B2A20;
+    --color-muted: #9C6644;
+    --color-bg: #ffffff;
+    --color-bg-translucent: rgba(255, 255, 255, 0.85);
     --color-white: #fff;
-    --color-border: #E4EBF3;
-    --color-border-nav: #E4EBF3;
-    --color-border-light: #D1D9E2;
-    --color-hover: rgba(56, 110, 224, 0.08);
-    --color-link-hover: #0073e6;
-    --color-link-hover: #0073e6;
-    --color-shadow: rgba(35, 55, 139, 0.1);
+    --color-border: #E6CCB2;
+    --color-border-nav: #e1e1e1;
+    --color-border-light: #DDB892;
+    --color-hover: rgba(176, 137, 104, 0.12);
+    --color-link-hover: #9C6644;
+    --color-shadow: rgba(176, 137, 104, 0.15);
 
     /* Components */
     --btn-bg: var(--color-primary);
@@ -116,24 +116,24 @@ html {
 
 /* Dark Theme Variables */
 .dark-theme:root {
-    --color-surface: #121212;
-    --color-primary: #3b94ff;
-    --color-primary-focus: #669df6;
-    --color-primary-light: #6aadfe;
-    --color-secondary: #aabfc9;
-    --color-text: #eee;
-    --color-text-light: #bbb;
-    --color-text-contrast: white;
-    --color-muted: #90a4ae;
-    --color-bg: #181818;
-    --color-bg-translucent: rgba(24, 24, 24, 0.85);
-    --color-white: #1e1e1e;
-    --color-border: #333;
-    --color-border-nav: #333;
-    --color-border-light: #444;
+    --color-surface: #2E241C;
+    --color-primary: #B08968;
+    --color-primary-focus: #DDB892;
+    --color-primary-light: #9C6644;
+    --color-secondary: #7F5539;
+    --color-text: #EDE0D4;
+    --color-text-light: #DDB892;
+    --color-text-contrast: #fff;
+    --color-muted: #9C6644;
+    --color-bg: #1c1c1c;
+    --color-bg-translucent: rgba(28, 28, 28, 0.85);
+    --color-white: #2A211B;
+    --color-border: #323232;
+    --color-border-nav: #2b2b2b;
+    --color-border-light: #4A3325;
     --color-hover: rgba(255, 255, 255, 0.08);
-    --color-link-hover: #4d9efc;
-    --color-shadow: rgba(0, 0, 0, 0.5);
+    --color-link-hover: #E6CCB2;
+    --color-shadow: rgba(0, 0, 0, 0.6);
 
     /* Component overrides */
     --btn-bg: var(--color-primary);
@@ -275,7 +275,6 @@ a.primary:focus {
 
 .secondary {
     border: 2px solid var(--color-primary);
-    background: var(--color-white);
     color: var(--color-primary);
 }
 
@@ -396,8 +395,8 @@ a.primary:focus {
     }
 }
 
-.dark-theme:root .hero-branding svg {
-    stroke: white;
+.hero-branding svg {
+    stroke: var(--color-text-dark);
 }
 
 .hl.lean .tactic-state {
@@ -448,12 +447,12 @@ kbd kbd {
     box-shadow: 0px 6px 12px rgba(35, 55, 139, 0.06), 0px 12px 20px rgba(35, 55, 139, 0.04);
 }
 
-.white-blue-gradient {
-    background: linear-gradient(135deg, #f0f4ff, #F2F5FF, #D5E1FF);
+.white-brown-gradient {
+    background: linear-gradient(135deg, #F1DFD0, #E6CCB2, #DDB892);;
 }
 
-.dark-theme .white-blue-gradient {
-    background: linear-gradient(130deg, #1a1c20 0%, #20232a 40%, #2a2f38 100%);
+.dark-theme .white-brown-gradient {
+    background: linear-gradient(135deg, #3B2A20, #7F5539, #9C6644);
 }
 
 div#calendar-container {
