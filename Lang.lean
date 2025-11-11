@@ -21,8 +21,8 @@ def langSite : Site :=
 
     "Governance" Lang.Pages.Governance
 
-    "privacy" Lang.Pages.PrivacyPolicy
-    "terms" Lang.Pages.TermsOfUse
+    "CodeOfConduct" Lang.Pages.CodeOfConduct
+    "License" Lang.Pages.License
 
     "documentation" Lang.Pages.Documentation
 

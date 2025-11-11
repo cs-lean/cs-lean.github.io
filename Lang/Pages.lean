@@ -10,6 +10,6 @@ import Lang.Pages.Links
 
 import Lang.Pages.Governance
 
-import Lang.Pages.PrivacyPolicy
+import Lang.Pages.CodeOfConduct
 import Lang.Pages.Publications
-import Lang.Pages.TermsOfUse
+import Lang.Pages.License

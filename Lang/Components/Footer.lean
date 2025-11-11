@@ -55,8 +55,8 @@ def footer [MonadStateOf Component.State m] [Monad m] : m Html := do
         <nav class="footer-column" aria-label="Policies">
           <h3 id="fro" class="footer-heading">"Policies"</h3>
           <ul class="footer-links">
-              <li><a href="/privacy" class="footer-text">"Privacy Policy"</a></li>
-              <li><a href="/terms" class="footer-text">"Terms of Use"</a></li>
+              <li><a href="/CodeOfConduct" class="footer-text">"Code of Conduct"</a></li>
+              <li><a href="/License" class="footer-text">"License"</a></li>
           </ul>
         </nav>
       </div>
