@@ -122,7 +122,7 @@ def xLogo (width : String := "20") : Icon :=
 def zulipLogo (width : String := "20") : Icon :=
   ⟨.zulipLogo, { width := some width }⟩
 
-def cslibLogo (fill : String := "#000") (width : Option Nat := none) (height : Option Nat := none) (strokeWidth : Nat := 4) : Icon :=
+def cslibLogo (fill : String := "#000") (width : Option Nat := none) (height : Option Nat := none) (strokeWidth : Nat := 0) : Icon :=
   let widthStr := width.map toString
   let heightStr := height.map toString
   ⟨.cslibLogo, { fill := some fill, width := widthStr, height := heightStr, strokeWidth := some strokeWidth }⟩
@@ -166,12 +166,9 @@ private def renderImgIcon (src : String) (alt : String) (params : IconParams) : 
   {{ <img width={{width}} src={{src}} alt={{alt}} /> }}
 
 private def renderCslibLogo (params : IconParams) : Html :=
-  let strokeWidth := params.strokeWidth.map toString |>.getD "4"
-  let stroke := params.fill.getD "#000"
+  let fill := params.fill.getD "#000"
   svg("./static/svg/cslib-logo-lines.svg")
-  |> setAttribute "stroke" stroke
-  |> setAttribute "fill" "transparent"
-  |> setAttribute "stroke-width" strokeWidth
+  |> setAttribute "fill" fill
   |> setOptionalAttr "width" params.width
   |> setOptionalAttr "height" params.height
 
