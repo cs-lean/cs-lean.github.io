@@ -190,10 +190,6 @@
     border-width: 0;
 }
 
-.dark-theme .navbar {
-    fill: white;
-    stroke: white;
-}
 
 .dark-theme .nav-link svg {
     fill: var(--color-text);
