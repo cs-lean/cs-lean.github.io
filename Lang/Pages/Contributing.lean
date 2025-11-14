@@ -24,7 +24,7 @@ def calendar : Html := {{
 
 # Contributing to CSLib
 
-Great that you're interested in contributing to CSLib! :tada:
+Great that you're interested in contributing to CSLib!
 
 Please read the rest of this document before submitting a pull request.
 If you have any questions, a good place to ask them is the [Lean prover Zulip chat](https://leanprover.zulipchat.com/).
@@ -32,7 +32,7 @@ If you have any questions, a good place to ask them is the [Lean prover Zulip ch
 ## Contribution model
 
 To get your code approved, you need to submit a [pull request (PR)](https://github.com/leanprover/cslib/pulls).
-Each PR needs to be approved by at least one relevant maintainer. You can read the [list of current maintainers](/GOVERNANCE.md#maintainers).
+Each PR needs to be approved by at least one relevant maintainer. You can read the [list of current maintainers](/Governance).
 
 If you are adding something new to cslib and are in doubt about it, you are very welcome to contact us on the [Lean prover Zulip chat](https://leanprover.zulipchat.com/).
 
@@ -44,7 +44,7 @@ We generally follow the [mathlib style for coding and documentation](https://lea
 
 Feel free to use variable names that make sense in the domain that you are dealing with. For example, in the `Lts` library, `State` is used for types of states and `μ` is used as variable name for transition labels.
 
-### Proof style and golfing :golf:
+### Proof style and golfing
 
 Please try to make proofs easy to follow.
 Golfing and automation are welcome, as long as proofs remain reasonably readable and compilation does not noticeably slow down.
@@ -59,6 +59,6 @@ The library hosts a number of languages with their own syntax and semantics, so 
 
 # Looking for more support?
 
-[Lean community website](https://leanprover-community.github.io/) \- A community maintained website that hosts a variety of helpful resources and is the main reference site for working with Mathlib, Lean's extensive community-built library of mathematics.
+[Lean community website](https://leanprover-community.github.io/) - A community maintained website that hosts a variety of helpful resources and is the main reference site for working with Mathlib, Lean's extensive community-built library of mathematics.
 
-[Lean community YouTube channel](https://www.youtube.com/@leanprovercommunity5485) \- Hosts many instructional videos, lectures and guides recorded from conferences and workshops organized by the Lean community.
+[Lean community YouTube channel](https://www.youtube.com/@leanprovercommunity5485) - Hosts many instructional videos, lectures and guides recorded from conferences and workshops organized by the Lean community.
