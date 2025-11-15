@@ -19,7 +19,7 @@ def footer [MonadStateOf Component.State m] [Monad m] : m Html := do
       <div class="footer-grid container">
         <nav class="footer-column" aria-label="LEAN">
           <a href=".">
-            {{ Icon.cslibLogo "white" (some 300) (some 80) (strokeWidth := 10) }}
+            {{ Icon.cslibLogo "var(--color-text)" (some 300) (some 80) (strokeWidth := 10) }}
           </a>
         </nav>
 
@@ -47,7 +47,7 @@ def footer [MonadStateOf Component.State m] [Monad m] : m Html := do
                 <li><a href="https://marketplace.visualstudio.com/items?itemName=leanprover.lean4" class="footer-text">
                 "VS Code extension"</a></li>
                 <li><a href="https://loogle.lean-lang.org/" class="footer-text">"Loogle"</a></li>
-                <li><a href="https://reservoir.lean-lang.org/" class="footer-text">"Reservoir"</a></li>     
+                <li><a href="https://reservoir.lean-lang.org/" class="footer-text">"Reservoir"</a></li>
                 <li><a href="https://github.com/leanprover-community/mathlib4" class="footer-text">"Mathlib"</a></li>
             </ul>
         </nav>
