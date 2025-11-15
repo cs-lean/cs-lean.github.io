@@ -40,7 +40,7 @@ def navItem (item : Item) : Html :=
 The lean lang logo.
 -/
 def logo : Html :=
-  {{ <a class="nav-logo" href="."> {{ Icon.cslibLogo "var(--color-primary)" (some 100) (some 50) (strokeWidth := 15) }} </a> }}
+  {{ <a class="nav-logo" href="."> {{ Icon.cslibLogo "var(--color-text)" (some 100) (some 50) (strokeWidth := 15) }} </a> }}
 
 /--
 The navigation bar component.

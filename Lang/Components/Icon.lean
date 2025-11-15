@@ -166,7 +166,7 @@ private def renderImgIcon (src : String) (alt : String) (params : IconParams) : 
   {{ <img width={{width}} src={{src}} alt={{alt}} /> }}
 
 private def renderCslibLogo (params : IconParams) : Html :=
-  let fill := params.fill.getD "#000"
+  let fill := params.fill.getD "var(--color-text)"
   svg("./static/svg/cslib-logo-lines.svg")
   |> setAttribute "fill" fill
   |> setOptionalAttr "width" params.width
