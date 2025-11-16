@@ -8,7 +8,7 @@ open Verso.Genre.Blog (Page)
 def leo : Member := {
   url := "/static/team/leo.jpg",
   name := "Leo de Moura",
-  role := "Lean Chief Architect, Co-Founder of Lean FRO",
+  role := "Lean Chief Architect, Co-Founder of Lean FRO, and Amazon",
 }
 
 def swarat : Member := {
