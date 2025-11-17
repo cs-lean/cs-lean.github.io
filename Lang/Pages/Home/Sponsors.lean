@@ -13,9 +13,15 @@ namespace Page
 namespace Home
 
 def sponsorsContent : Array Sponsor := #[
-  { name := "Amazon", logo := "/static/png/aws.png", link := "https://www.amazon.com" },
-  { name := "Google", logo := "/static/png/deepmind.png", link := "https://www.google.com" },
-  { name := "University of Southern Denmark", logo := "/static/png/sdu.png", link := "https://www.sdu.dk/" }
+  { name := "Amazon", logo := "/static/png/aws.png",
+    link := "https://www.amazon.com" },
+  { name := "Google", logo := "/static/png/deepmind.png",
+    link := "https://www.google.com" },
+  { name := "University of Southern Denmark",
+    logo := "/static/png/sdu.png", link := "https://www.sdu.dk/" },
+  { name := "Stanford Center for Automated Reasoning",
+    logo := "/static/png/centaur.png",
+    link := "https://centaur.stanford.edu"}
 ]
 
 block_component +directive sponsors where
