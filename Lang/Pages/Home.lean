@@ -25,8 +25,5 @@ set_option grind.warning false
 :::Lang.Page.Home.hero
 :::
 
-
 :::Lang.Page.Home.sponsors
 :::
-
-
