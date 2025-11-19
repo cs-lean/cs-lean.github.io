@@ -550,9 +550,8 @@ body {
 }
 
 #cslib-hero {
-    background: var(--color-primary);
     padding: 100px 50px;
-    margin: 0px 30px;
+    margin: 0px 40px;
     margin-top: 60px;
     border-radius: 10px;
 }

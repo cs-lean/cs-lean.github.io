@@ -12,10 +12,6 @@ open Verso Doc Output Html HtmlT FS
 
 namespace Lang
 
-def isFro : List String → Bool
-  | "fro" :: _ => true
-  | _ => false
-
 def archiveEntry : Template := do
   let post : BlogPost ← param "post"
   let summary : Html ← param "summary"
@@ -95,7 +91,7 @@ def postTemplate : Template := do
   let metadata ← param? "metadata"
 
   pure {{
-    <main class=s!"container{when (isFro (← currentPath)) " fro"}">
+    <main class=s!"container">
     <div class=s!"{if nav.isSome then "post-grid" else "post-center"} post-page" role="main">
       <article class="post-container" id={{(metadata >>= (Post.Meta.htmlId)) |>.getD "post"}}>
         <h1>{{← param "title"}}</h1>

@@ -20,7 +20,7 @@ block_component +directive hero where
 
   toHtml _id _json _goI _goB _content := do
     return {{
-      <section id="cslib-hero" aria-label="Hero">
+      <section id="cslib-hero" class="white-brown-gradient" aria-label="Hero">
         <div class="hero container">
           <div class="hero-content">
             <div class="hero-left">
@@ -31,8 +31,10 @@ block_component +directive hero where
                 </p>
               </div>
               <div class="hero-buttons reveal transition-delay-large">
-                <a class="hero-button button primary" href="/roadmap/">{{ Icon.arrowForward "25" "black" }} "Roadmap"</a>
-                <a class="hero-button button secondary learn-button" href="/api/"><span>{{ Icon.book (fill := "var(--color-primary)") (some 25) }} "API"</span></a>
+                <a class="hero-button button secondary" href="/roadmap/">
+                 {{ Icon.arrowForward "25" "black" }} "Roadmap"</a>
+                <a class="hero-button button secondary" href="/api/">
+                 {{ Icon.book (fill := "var(--color-primary)") (some 25) }} "API"</a>
               </div>
             </div>
             <div class="hero-right">

@@ -220,9 +220,6 @@
 nav.sub-navbar .navbar-container {
     justify-content: start;
 }
-.fro-toggle-checkbox {
-  display: none;
-}
 
 .has-submenu > .nav-link {
   justify-content: space-between;
@@ -236,18 +233,10 @@ nav.sub-navbar .navbar-container {
   padding-left: var(--space-4);
 }
 
-.fro-toggle-checkbox:checked + .nav-link + .submenu {
-  display: flex;
-}
-
 .has-submenu > .nav-link::after {
   content: '▸';
   transition: transform 0.3s;
   padding: 0px 10px;
-}
-
-.fro-toggle-checkbox:checked + .nav-link::after {
-  transform: rotate(90deg);
 }
 
 

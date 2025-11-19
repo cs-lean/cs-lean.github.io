@@ -386,7 +386,7 @@
     box-sizing: border-box;
 }
 
-.fro .post-index {
+.post-index {
     top: calc(var(--nav-height) + 6em);
     max-height: calc(100vh - (var(--nav-height) * 2 + 3em));
 }

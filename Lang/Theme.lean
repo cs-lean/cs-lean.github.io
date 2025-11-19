@@ -21,7 +21,7 @@ namespace Lang
 Marks the layout of the page.
 -/
 def isMarkdownPage : List String → Bool
-  | [] | ["fro"] | ["404"] => false
+  | [] | ["404"] => false
   | _ => true
 
 def indexPage : List String → Bool

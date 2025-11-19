@@ -439,16 +439,13 @@ kbd kbd {
     margin: 0 1px;
 }
 
-.long-shadow {
-    box-shadow: 0px 14px 30px 0px rgba(35, 55, 139, 0.10), 0px 124px 74px 0px rgba(35, 55, 139, 0.05), 0px 55px 55px 0px rgba(35, 55, 139, 0.04);
-}
-
-.soft-shadow {
-    box-shadow: 0px 6px 12px rgba(35, 55, 139, 0.06), 0px 12px 20px rgba(35, 55, 139, 0.04);
-}
-
 .white-brown-gradient {
-    background: linear-gradient(135deg, #F1DFD0, #E6CCB2, #DDB892);;
+    background: linear-gradient(
+        135deg,
+        #D7C5B0 5%,   /* clareamento coerente de #3B2A20 */
+        #C29E7A 40%,  /* clareamento suave de #7F5539 */
+        #B6885F 100%  /* clareamento equilibrado de #9C6644 */
+    );
 }
 
 .dark-theme .white-brown-gradient {
@@ -739,7 +736,6 @@ button.game-button.button.primary {
     justify-content: center;
     gap: 5px;
     padding: 10px 30px;
-    background-color: #3498db;
     color: white;
     border: none;
     border-radius: 5px;
@@ -811,7 +807,6 @@ button.game-button.button.primary {
         flex-direction: column;
     }
 
-
     .game-container {
         padding: 40px;
         text-align: center;
@@ -835,7 +830,3 @@ a.card-href.card.main-learn-card {
     color: var(--color-text) !important;
 }
 
-.mid a {
-    color: var(--color-primary-light);
-    background: linear-gradient(transparent 80%, rgba(107, 164, 255, 0.1) 80%);
-}

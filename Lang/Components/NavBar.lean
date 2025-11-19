@@ -45,7 +45,7 @@ def logo : Html :=
 /--
 The navigation bar component.
 -/
-def navBar {m} [MonadStateOf Component.State m] [Monad m] (leftItems : Array Item) (rightItems : Array Item) (menuItems : Array Item) (externalLinks : Array Item) : m Html := do
+def navBar {m} [MonadStateOf Component.State m] [Monad m] (leftItems : Array Item) (rightItems : Array Item) (_menuItems : Array Item) (externalLinks : Array Item) : m Html := do
   return {{
     <nav class="navbar" role="navigation" aria-label="Primary navigation">
       <div class="navbar-container container">
@@ -74,13 +74,6 @@ def navBar {m} [MonadStateOf Component.State m] [Monad m] (leftItems : Array Ite
         <ul class="nav-list">
           {{ (leftItems.pop).map navItem }}
           {{ (externalLinks.pop).map navItem }}
-          <li class="nav-item has-submenu">
-            <input type="checkbox" id="fro-toggle" class="fro-toggle-checkbox" hidden="true" />
-            <label for="fro-toggle" class="nav-link" aria-label="Toggle navigation menu">"FRO"</label>
-            <ul class="submenu">
-              {{ menuItems.map navItem }}
-            </ul>
-          </li>
         </ul>
       </menu>
     </nav>

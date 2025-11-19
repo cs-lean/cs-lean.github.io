@@ -18,7 +18,7 @@
 }
 
 .zulip-info a {
-    background: var(--color-primary) !important;
+    background: var(--color-primary-focus) !important;
     padding: var(--space-10) var(--space-16);
     border-radius: var(--radius-md);
     color: var(--color-text-contrast) !important;

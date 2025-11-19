@@ -15,7 +15,7 @@ def footer [MonadStateOf Component.State m] [Monad m] : m Html := do
   Template.saveCss (include_str "../../static/css/footer.css")
 
   return {{
-    <footer role="contentinfo" aria-label="Site footer">
+    <footer role="contentinfo" class="white-brown-gradient" aria-label="Site footer">
       <div class="footer-grid container">
         <nav class="footer-column" aria-label="LEAN">
           <a href=".">
@@ -53,7 +53,7 @@ def footer [MonadStateOf Component.State m] [Monad m] : m Html := do
         </nav>
 
         <nav class="footer-column" aria-label="Policies">
-          <h3 id="fro" class="footer-heading">"Policies"</h3>
+          <h3 id="policies" class="footer-heading">"Policies"</h3>
           <ul class="footer-links">
               <li><a href="/CodeOfConduct" class="footer-text">"Code of Conduct"</a></li>
               <li><a href="/License" class="footer-text">"License"</a></li>

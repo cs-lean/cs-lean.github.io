@@ -17,14 +17,12 @@ def getDirLinks : TemplateM (Array (Bool × Option String × Html)) := do
   let pages := (← read).site
   let cur ← currentPath
 
-  let isFroSubPage := cur.length > 1 && cur[0]! == "fro"
-
   match pages with
   | .page _ _ subs =>
     subs.filterMapM fun
       | .page name _id txt .. | .blog name _id txt .. =>
         if txt.metadata.map (·.showInNav) |>.getD true then
-          pure <| some (¬cur.isEmpty && cur[0]! == name && !isFroSubPage, name, txt.titleString)
+          pure <| some (¬cur.isEmpty && cur[0]! == name, name, txt.titleString)
         else
           pure none
       | .static .. => pure none
