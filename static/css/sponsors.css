@@ -16,9 +16,10 @@
 }
 
 img.sponsor-logo {
-    width: 100%;
-    max-height: 70px;
-    min-height: 70px;
+    height: 70px; 
+    width: auto;
+    object-fit: contain;
+    flex: 0 0 auto; 
 }
 
 @media (max-width: 768px) {
