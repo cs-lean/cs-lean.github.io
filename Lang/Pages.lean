@@ -6,8 +6,6 @@ import Lang.Pages.Contributing
 import Lang.Pages.Documentation
 import Lang.Pages.Roadmap
 
-import Lang.Pages.Links
-
 import Lang.Pages.Governance
 
 import Lang.Pages.CodeOfConduct

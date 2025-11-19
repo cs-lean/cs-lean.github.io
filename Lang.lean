@@ -27,7 +27,6 @@ def langSite : Site :=
     "documentation" Lang.Pages.Documentation
 
     "publications" Lang.Pages.Publications
-    "links" Lang.Pages.Links
 
 def main (args : List String) : IO UInt32 :=
   blogMain (Lang.theme "Lean Lang") langSite {} args
