@@ -43,7 +43,7 @@ body {
 .hero-tagline {
     margin-top: var(--space-2);
     font-size: var(--fs-md);
-    color: var(--color-text-contrast);
+    color: var(--color-text);
     line-height: 1.4;
     font-weight: 400;
 }
@@ -531,18 +531,18 @@ body {
 .focus-list li {
     margin-bottom: 12px;
     display: flex;
-    font-size: 0.95rem;
-    font-weight: 600;    
+    font-size: var(--fs-md);
     line-height: 1.3;
     gap: 30px;
     padding: 10px 0px;
     border-radius: 10px;
-    color: var(--color-text-contrast);
+    color: var(--color-text);
     align-items: center;
 }
 
 .focus-list strong {
-    color: var(--color-text-contrast);
+    color: var(--color-text);
+    font-weight: 600;
 }
 
 .focus-list li:last-child {

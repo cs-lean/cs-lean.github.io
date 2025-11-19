@@ -38,23 +38,3 @@ img.sponsor-logo {
     filter: invert(1) brightness(10);
 }
 
-/* Sponsors section heading styling */
-.sponsors .heading-section span {
-    background: linear-gradient(
-        135deg,
-        var(--gradient-color-1) 5%,
-        var(--gradient-color-2) 40%,
-        var(--gradient-color-3) 100%
-    );
-}
-
-.dark-theme .sponsors .heading-section span {
-    background: linear-gradient(
-	135deg,
-	var(--gradient-color-1),
-	var(--gradient-color-2),
-	var(--gradient-color-3)
-    );
-}
-
-
