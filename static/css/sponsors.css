@@ -18,6 +18,7 @@
 img.sponsor-logo {
     height: 70px; 
     width: auto;
+    max-width: 250px;
     object-fit: contain;
     flex: 0 0 auto; 
 }
