@@ -14,9 +14,9 @@ namespace Home
 
 def sponsorsContent : Array Sponsor := #[
   { name := "Amazon", logo := "/static/png/aws.png",
-    link := "https://www.amazon.com" },
+    link := "https://aws.amazon.com" },
   { name := "Google", logo := "/static/png/deepmind.png",
-    link := "https://www.google.com" },
+    link := "https://deepmind.google" },
   { name := "University of Southern Denmark",
     logo := "/static/png/sdu.png", link := "https://www.sdu.dk/" },
   { name := "Stanford Center for Automated Reasoning",

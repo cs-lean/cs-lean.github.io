@@ -1,6 +1,6 @@
 
 body > footer {
-    color: var(--color-text-contrast);
+    color: var(--color-text);
     padding: var(--space-4);
     font-family: var(--font-primary);
     transition: background-color var(--transition-base);
