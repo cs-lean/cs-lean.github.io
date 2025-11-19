@@ -80,7 +80,7 @@
 
 .content-area {
     flex: 1;
-    padding: 0px 32px 28px 28px;
+    padding: 0px 10px 28px 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -94,7 +94,7 @@
 
 .member-name {
     overflow-wrap: anywhere;
-    font-size: 1.25rem !important;
+    font-size: 1.18rem !important;
     font-weight: 500 !important;
     color: var(--color-text) !important;
     margin-bottom: 8px !important;
