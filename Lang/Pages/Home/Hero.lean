@@ -32,23 +32,23 @@ block_component +directive hero where
               </div>
               <div class="hero-buttons reveal transition-delay-large">
                 <a class="hero-button button secondary" href="/roadmap/">
-                 {{ Icon.arrowForward "25" "black" }} "Roadmap"</a>
+                 {{ Icon.arrowForward "25" "var(--color-primary)" }} "Roadmap"</a>
                 <a class="hero-button button secondary" href="/api/">
                  {{ Icon.book (fill := "var(--color-primary)") (some 25) }} "API"</a>
               </div>
             </div>
             <div class="hero-right">
               <ul class="focus-list">
-                <li><i>{{ Icon.clock (fill := "black") }}</i>
+                <li><i>{{ Icon.clock (fill := "var(--color-text)") }}</i>
                  <div class="text"><strong>"Formalizing CS Foundations"</strong>
                  <br/>"Including computational models and complexity analysis tools."</div></li>
-                <li><i>{{ Icon.link (fill := "black") }}</i>
+                <li><i>{{ Icon.link (fill := "var(--color-text)") }}</i>
                  <div class="text"><strong>"Reasoning about Code"</strong>
                  <br/>"Builds on the rich tradition of deductive verification techniques."</div></li>
-                <li><i>{{ Icon.book (fill := "black") (some 25) }}</i>
+                <li><i>{{ Icon.book (fill := "var(--color-text)") (some 25) }}</i>
                 <div class="text"><strong>"Repository of Verified Code"</strong>
                 <br/>"Cover all algorithms and data structures that a typical CS undergraduate encounter."</div></li>
-                <li><i>{{ Icon.activity (fill := "black") }}</i>
+                <li><i>{{ Icon.activity (fill := "var(--color-text)") }}</i>
                 <div class="text"><strong>"AI Integration"</strong>
                 <br/>"Training datasets and AI-assisted contribution tools"</div></li>
               </ul>

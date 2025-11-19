@@ -79,25 +79,25 @@ html {
     --z-header: 1000;
 
     /* Colors */
-    --color-surface: #E6CCB2;
-    --color-primary: #B08968;
-    --color-primary-focus: #9C6644;
-    --color-primary-light: #DDB892;
-    --color-secondary: #7F5539;
-    --color-text: #3B2A20;
+    --color-surface: #E5D0BA;
+    --color-primary: #A0522D;
+    --color-primary-focus: #8B4513;
+    --color-primary-light: #CD853F;
+    --color-secondary: #6B4423;
+    --color-text: #2F1A0F;
     --color-text-contrast: #fff;
-    --color-text-light: #7F5539;
-    --color-text-dark: #3B2A20;
-    --color-muted: #9C6644;
+    --color-text-light: #5C3A21;
+    --color-text-dark: #2F1A0F;
+    --color-muted: #8B4513;
     --color-bg: #ffffff;
     --color-bg-translucent: rgba(255, 255, 255, 0.85);
     --color-white: #fff;
-    --color-border: #E6CCB2;
+    --color-border: #E5D0BA;
     --color-border-nav: #e1e1e1;
-    --color-border-light: #DDB892;
-    --color-hover: rgba(176, 137, 104, 0.12);
-    --color-link-hover: #9C6644;
-    --color-shadow: rgba(176, 137, 104, 0.15);
+    --color-border-light: #D4BFA6;
+    --color-hover: rgba(160, 82, 45, 0.12);
+    --color-link-hover: #8B4513;
+    --color-shadow: rgba(160, 82, 45, 0.15);
 
     /* Components */
     --btn-bg: var(--color-primary);
@@ -117,30 +117,30 @@ html {
 /* Dark Theme Variables */
 .dark-theme:root {
     --color-surface: #2E241C;
-    --color-primary: #B08968;
-    --color-primary-focus: #DDB892;
-    --color-primary-light: #9C6644;
-    --color-secondary: #7F5539;
-    --color-text: #EDE0D4;
-    --color-text-light: #DDB892;
+    --color-primary: #F4A460;
+    --color-primary-focus: #FFB870;
+    --color-primary-light: #CD853F;
+    --color-secondary: #6B4423;
+    --color-text: #F5E6D3;
+    --color-text-light: #E5D0BA;
     --color-text-contrast: #fff;
-    --color-muted: #9C6644;
+    --color-muted: #CD853F;
     --color-bg: #1c1c1c;
     --color-bg-translucent: rgba(28, 28, 28, 0.85);
     --color-white: #2A211B;
-    --color-border: #323232;
+    --color-border: #3d3229;
     --color-border-nav: #2b2b2b;
     --color-border-light: #4A3325;
-    --color-hover: rgba(255, 255, 255, 0.08);
-    --color-link-hover: #E6CCB2;
+    --color-hover: rgba(244, 164, 96, 0.12);
+    --color-link-hover: #FFB870;
     --color-shadow: rgba(0, 0, 0, 0.6);
 
     /* Component overrides */
     --btn-bg: var(--color-primary);
-    --btn-text: var(--color-white);
+    --btn-text: #2F1A0F;
     --card-bg: #1f1f1f;
     --card-border: #2a2a2a;
-    --testimonial-bg: #2e3a59;
+    --testimonial-bg: #3d3229;
     --testimonial-text: #fff;
 }
 
@@ -323,6 +323,33 @@ a.primary:focus {
     fill: var(--color-white);
 }
 
+/* Dark theme button improvements */
+.dark-theme .secondary,
+.dark-theme .hero-button.secondary,
+.dark-theme a.secondary {
+    background: rgba(244, 164, 96, 0.15) !important;
+    border: 2px solid var(--color-primary) !important;
+    color: var(--color-primary) !important;
+}
+
+.dark-theme .secondary svg,
+.dark-theme .hero-button.secondary svg,
+.dark-theme a.secondary svg {
+    fill: var(--color-primary) !important;
+}
+
+.dark-theme .secondary:hover,
+.dark-theme .hero-button.secondary:hover,
+.dark-theme a.secondary:hover {
+    background: var(--color-primary) !important;
+    color: #2F1A0F !important;
+}
+
+.dark-theme .secondary:hover svg,
+.dark-theme .hero-button.secondary:hover svg,
+.dark-theme a.secondary:hover svg {
+    fill: #2F1A0F !important;
+}
 
 [id] {
     scroll-margin-top: calc(var(--nav-height));
@@ -442,14 +469,14 @@ kbd kbd {
 .white-brown-gradient {
     background: linear-gradient(
         135deg,
-        #D7C5B0 5%,   /* clareamento coerente de #3B2A20 */
-        #C29E7A 40%,  /* clareamento suave de #7F5539 */
-        #B6885F 100%  /* clareamento equilibrado de #9C6644 */
+        #CCAE8E 5%,   /* melhor contraste com texto escuro */
+        #B8936F 40%,  /* tom médio mais saturado */
+        #A0704A 100%  /* base escura para maior contraste */
     );
 }
 
 .dark-theme .white-brown-gradient {
-    background: linear-gradient(135deg, #3B2A20, #7F5539, #9C6644);
+    background: linear-gradient(135deg, #2F1A0F, #6B4423, #8B4513);
 }
 
 div#calendar-container {
@@ -828,5 +855,19 @@ a.card-href.card.main-learn-card {
 
 .hl.lean .hover-info code {
     color: var(--color-text) !important;
+}
+
+/* Sponsors section heading styling */
+.sponsors .heading-section span {
+    background: linear-gradient(
+        135deg,
+        #CCAE8E 5%,
+        #B8936F 40%,
+        #A0704A 100%
+    );
+}
+
+.dark-theme .sponsors .heading-section span {
+    background: linear-gradient(135deg, #2F1A0F, #6B4423, #8B4513);
 }
 
