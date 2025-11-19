@@ -104,6 +104,7 @@ html {
     --btn-text: var(--color-white);
     --btn-font: var(--font-primary);
     --btn-radius: var(--radius-md);
+    --btn-secondary-bg: transparent;
 
     /* Card specific */
     --card-bg: var(--color-white);
@@ -112,6 +113,11 @@ html {
     /* Testimonial specific */
     --testimonial-bg: var(--color-primary);
     --testimonial-text: var(--color-white);
+
+    /* Gradient colors */
+    --gradient-color-1: #CCAE8E;
+    --gradient-color-2: #B8936F;
+    --gradient-color-3: #A0704A;
 }
 
 /* Dark Theme Variables */
@@ -138,10 +144,16 @@ html {
     /* Component overrides */
     --btn-bg: var(--color-primary);
     --btn-text: #2F1A0F;
+    --btn-secondary-bg: rgba(244, 164, 96, 0.15);
     --card-bg: #1f1f1f;
     --card-border: #2a2a2a;
     --testimonial-bg: #3d3229;
     --testimonial-text: #fff;
+
+    /* Gradient colors */
+    --gradient-color-1: #2F1A0F;
+    --gradient-color-2: #6B4423;
+    --gradient-color-3: #8B4513;
 }
 
 * {
@@ -327,7 +339,7 @@ a.primary:focus {
 .dark-theme .secondary,
 .dark-theme .hero-button.secondary,
 .dark-theme a.secondary {
-    background: rgba(244, 164, 96, 0.15) !important;
+    background: var(--btn-secondary-bg) !important;
     border: 2px solid var(--color-primary) !important;
     color: var(--color-primary) !important;
 }
@@ -342,13 +354,13 @@ a.primary:focus {
 .dark-theme .hero-button.secondary:hover,
 .dark-theme a.secondary:hover {
     background: var(--color-primary) !important;
-    color: #2F1A0F !important;
+    color: var(--btn-text) !important;
 }
 
 .dark-theme .secondary:hover svg,
 .dark-theme .hero-button.secondary:hover svg,
 .dark-theme a.secondary:hover svg {
-    fill: #2F1A0F !important;
+    fill: var(--btn-text) !important;
 }
 
 [id] {
@@ -469,14 +481,14 @@ kbd kbd {
 .white-brown-gradient {
     background: linear-gradient(
         135deg,
-        #CCAE8E 5%,   /* melhor contraste com texto escuro */
-        #B8936F 40%,  /* tom médio mais saturado */
-        #A0704A 100%  /* base escura para maior contraste */
+        var(--gradient-color-1) 5%,
+        var(--gradient-color-2) 40%,
+        var(--gradient-color-3) 100%
     );
 }
 
 .dark-theme .white-brown-gradient {
-    background: linear-gradient(135deg, #2F1A0F, #6B4423, #8B4513);
+    background: linear-gradient(135deg, var(--gradient-color-1), var(--gradient-color-2), var(--gradient-color-3));
 }
 
 div#calendar-container {
@@ -855,19 +867,5 @@ a.card-href.card.main-learn-card {
 
 .hl.lean .hover-info code {
     color: var(--color-text) !important;
-}
-
-/* Sponsors section heading styling */
-.sponsors .heading-section span {
-    background: linear-gradient(
-        135deg,
-        #CCAE8E 5%,
-        #B8936F 40%,
-        #A0704A 100%
-    );
-}
-
-.dark-theme .sponsors .heading-section span {
-    background: linear-gradient(135deg, #2F1A0F, #6B4423, #8B4513);
 }
 
