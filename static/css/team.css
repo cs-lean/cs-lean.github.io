@@ -94,7 +94,7 @@
 
 .member-name {
     overflow-wrap: anywhere;
-    font-size: 1.18rem !important;
+    font-size: var(--fs-base) !important;
     font-weight: 500 !important;
     color: var(--color-text) !important;
     margin-bottom: 8px !important;

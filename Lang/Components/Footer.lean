@@ -35,7 +35,7 @@ def footer [MonadStateOf Component.State m] [Monad m] : m Html := do
         <nav class="footer-column" aria-label="Documentation">
             <h3 id="documentation" class="footer-heading">"Documentation"</h3>
             <ul class="footer-links">
-                <li><a href="https://cs-lean.github.io/" class="footer-text">"CSLib API"</a></li>
+                <li><a href="https://leanprover.github.io/cslib/docs/" class="footer-text">"CSLib API"</a></li>
                 <li><a href="https://lean-lang.org/doc/reference/latest/" class="footer-text">"Lean Language Reference"</a></li>
             </ul>
         </nav>
@@ -64,7 +64,7 @@ def footer [MonadStateOf Component.State m] [Monad m] : m Html := do
       <div class="footer-divider container" role="separator"></div>
       <div class="footer-bottom container">
         <div class="footer-copy">
-          -- "© 2025 CSLib. All rights reserved."
+          /- "© 2025 CSLib. All rights reserved." -/
         </div>
         <div class="footer-socials">
           <label class="theme-switch">
@@ -79,7 +79,8 @@ def footer [MonadStateOf Component.State m] [Monad m] : m Html := do
           <a href="https://functional.cafe/@leanprover"> {{ Icon.mastodonLogo }} </a>
           <a href="https://x.com/leanprover"> {{ Icon.xLogo }} </a>
           -/
-          <a href="https://leanprover.zulipchat.com/#narrow/channel/513188-CSLib"> {{ Icon.zulipLogo }} </a>
+          <a href="https://leanprover.zulipchat.com/#narrow/channel/513188-CSLib">
+           {{ Icon.zulipLogo }} </a>
           <a href="https://github.com/leanprover/cslib/"> {{ Icon.githubLogo }} </a>
         </div>
       </div>

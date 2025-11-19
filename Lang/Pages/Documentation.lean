@@ -8,4 +8,4 @@ open Verso.Genre.Blog (Page)
 showInNav := true
 %%%
 
-See [Core documentation](/api/).
+See [API documentation](https://leanprover.github.io/cslib/docs/).

@@ -88,7 +88,6 @@ block_component +directive teamDiv (whichTeam : String) where
         </div>
     }}
 
-
 #doc (Page) "Governance" =>
 
 %%%
@@ -116,7 +115,7 @@ The maintainer team is responsible for the quality of the codebase, establishing
 
 The lead maintainer coordinates the overall work of the maintainer team and oversees the project's repositories.
 
-- Fabrizio Montesi (@fmontesi), University of Southern Denmark and Danish Institute for Advanced Study.
+- Fabrizio Montesi, University of Southern Denmark and Danish Institute for Advanced Study.
 
 # Technical leads
 
@@ -136,4 +135,4 @@ Area maintainers are trusted contributors who take ownership of specific areas o
 
 The best option is to post your question or message in the [CSLib Zulip channel](https://leanprover.zulipchat.com/#narrow/channel/513188-CSLib).
 You can also open an issue on the [CSLib repository](https://github.com/leanprover/cslib).
-Alternatively, you may contact one of the [team members](/team/).
+Alternatively, you may contact any of us.
