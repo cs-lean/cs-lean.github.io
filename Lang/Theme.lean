@@ -58,7 +58,7 @@ def config : HeadConfig :=
     faviconWhite   := "https://cs-lean.github.io/static/favicon-light.ico",
     faviconDark    := "https://cs-lean.github.io/static/favicon-dark.ico",
     appleTouchIcon := "https://cs-lean.github.io/static/apple-touch-icon.png",
-    color := "#3D6AC9"
+    color := "#8B4513"
   }
 
 private def primaryTemplate (siteName : String) (extraHead : Html := .empty) : TemplateM Html := do
