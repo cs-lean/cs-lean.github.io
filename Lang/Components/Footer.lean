@@ -64,7 +64,7 @@ def footer [MonadStateOf Component.State m] [Monad m] : m Html := do
       <div class="footer-divider container" role="separator"></div>
       <div class="footer-bottom container">
         <div class="footer-copy">
-          "© 2025 CSLib. All rights reserved."
+          -- "© 2025 CSLib. All rights reserved."
         </div>
         <div class="footer-socials">
           <label class="theme-switch">
@@ -73,11 +73,13 @@ def footer [MonadStateOf Component.State m] [Monad m] : m Html := do
                 <span class="slider"></span>
             </div>
           </label>
+          /-
           <a href="https://bsky.app/profile/lean-lang.org"> {{ Icon.blueskyLogo }} </a>
           <a href="https://www.linkedin.com/company/lean-fro"> {{ Icon.linkedinLogo }} </a>
           <a href="https://functional.cafe/@leanprover"> {{ Icon.mastodonLogo }} </a>
           <a href="https://x.com/leanprover"> {{ Icon.xLogo }} </a>
-          <a href="https://leanprover.zulipchat.com/"> {{ Icon.zulipLogo }} </a>
+          -/
+          <a href="https://leanprover.zulipchat.com/#narrow/channel/513188-CSLib"> {{ Icon.zulipLogo }} </a>
           <a href="https://github.com/leanprover/cslib/"> {{ Icon.githubLogo }} </a>
         </div>
       </div>
