@@ -18,19 +18,23 @@ lean_lib Lang where
 lean_exe «cslib» where
   root := `Lang
   supportInterpreter := true
-  needs := #[`@/static]
+  needs := #[`@/static, `@/styleCSS]
 
 input_dir static where
   path := "static/"
   text := true
   filter := .extension (#["css", "js", "svg"].contains ·)
 
+input_file styleCSS where
+  path := "static/css/style.css"
+
+
 script generate (args) do
   if !args.isEmpty then
     IO.eprintln "No args expected"
     return 1
 
-  let code ← IO.Process.Child.wait 
+  let code ← IO.Process.Child.wait
     <| ← IO.Process.spawn {cmd := "lake", args := #["exe", "cslib", "--output", "_cslib.org"]}
   if code != 0 then
     return code

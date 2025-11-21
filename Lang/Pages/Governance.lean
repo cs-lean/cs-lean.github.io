@@ -1,9 +1,8 @@
 import VersoBlog
 import Lang.Components.Team
-
 open Verso.Output Html
 open Lang Components
-open Verso.Genre.Blog (Page)
+open Verso.Genre.Blog (Page page_link)
 
 def leo : Member := {
   url := "/static/team/leo.jpg",
@@ -96,13 +95,16 @@ showInNav := true
 
 Cslib is governed by two main bodies:
 
-- A [steering committee](#steering-committee), responsible for securing financial support and guiding the overall vision of the project.
-- A [maintainer team](#maintainers), responsible for curating, expanding, and maintaining the code repository and its technical direction.
+- A {page_link Lang.Pages.Governance "steering-committee"}[steering committee], responsible for securing financial support and guiding the overall vision of the project.
+- A [maintainer team](Governance/#maintainers), responsible for curating, expanding, and maintaining the code repository and its technical direction.
 
 These groups work together to define the project's roadmap and foster a welcoming and productive environment.
 New members may be invited based on project needs and individual merit (e.g., contributions, review activity).
 
 # Steering committee
+%%%
+htmlId := "steering-committee"
+%%%
 
 :::teamDiv "teamMembers"
 :::
