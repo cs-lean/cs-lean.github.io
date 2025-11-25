@@ -12,7 +12,7 @@ import Lang.Theme.Blog
 import Lang.Theme.Links
 import Lang.Theme.NavBar
 
-open Verso Genre Blog Template Output Doc Output Html
+open Verso Genre Blog Template Output Doc Output Html Multi
 open Lang Theme Components
 
 namespace Lang
@@ -20,27 +20,26 @@ namespace Lang
 /--
 Marks the layout of the page.
 -/
-def isMarkdownPage : List String → Bool
-  | [] | ["404"] => false
+def isMarkdownPage : Path → Bool
+  | #[] | #["404"] => false
   | _ => true
 
-def indexPage : List String → Bool
+def indexPage : Path → Bool
   | _ => false
 
-def needsTitle : List String → Bool
-  | ["learn"] | ["install"] | ["404"] => false
+def needsTitle : Path → Bool
+  | #["learn"] | #["install"] | #["404"] => false
   | _ => true
 
-def isInstallPage : List String → Bool
-  | "install" :: _ => true
+def isInstallPage (path : Path) : Bool :=
+  if let some "install" := path[0]? then true else false
+
+def isUseCases : Path → Bool
+  | #["use-cases"] => true
   | _ => false
 
-def isUseCases : List String → Bool
-  | ["use-cases"] => true
-  | _ => false
-
-def isPagePost : List String → Bool
-  | ["use-cases", _] => true
+def isPagePost : Path → Bool
+  | #["use-cases", _] => true
   | _ => false
 
 def home : SocialMeta :=
@@ -67,7 +66,7 @@ private def primaryTemplate (siteName : String) (extraHead : Html := .empty) : T
 
   return {{
     <html lang="en">
-      {{ ← head siteName config home extraHead (if path == ["404"] then some "/" else none) }}
+      {{ ← head siteName config home extraHead (if path == #["404"] then some "/" else none) }}
       <body>
         {{ ← Components.noJSBar }}
         <header class="site-header">

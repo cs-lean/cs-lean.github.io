@@ -96,7 +96,7 @@ showInNav := true
 Cslib is governed by two main bodies:
 
 - A {page_link Lang.Pages.Governance "steering-committee"}[steering committee], responsible for securing financial support and guiding the overall vision of the project.
-- A [maintainer team](Governance/#maintainers), responsible for curating, expanding, and maintaining the code repository and its technical direction.
+- A {page_link Lang.Pages.Governance "maintainers"}[maintainer team], responsible for curating, expanding, and maintaining the code repository and its technical direction.
 
 These groups work together to define the project's roadmap and foster a welcoming and productive environment.
 New members may be invited based on project needs and individual merit (e.g., contributions, review activity).
@@ -110,6 +110,9 @@ htmlId := "steering-committee"
 :::
 
 # Maintainers
+%%%
+htmlId := "maintainers"
+%%%
 
 The maintainer team is responsible for the quality of the codebase, establishing technical standards and ensuring coherence across contributions.
 

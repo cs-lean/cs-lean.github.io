@@ -125,7 +125,7 @@ def head (siteName : String) (config : HeadConfig) (social : Option SocialMeta :
       <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
       {{
-        if page == []
+        if page == .root
           then {{ <title> "A Focused Effort on Formalizing Computer Science in Lean" </title> }}
           else {{ <title>{{ title }} s!" — {siteName} "</title> }}
       }}
