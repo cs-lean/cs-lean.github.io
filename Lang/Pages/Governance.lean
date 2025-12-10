@@ -42,6 +42,8 @@ def kohli : Member := {
 
 def teamMembers : Array Member := #[clark, swarat, jim, kohli, leo, fabrizio]
 
+def leadMaintainer : Array Member := #[fabrizio]
+
 def arademaker : Member := {
   url := "/static/team/rademaker.jpg",
   name := "Alexandre Rademaker",
@@ -72,7 +74,7 @@ def henson : Member := {
 
 def areaMaintainers : Array Member := #[henson, kim]
 
-def teamData := #[("teamMembers", teamMembers), ("techLeads", techLeads), ("areaMaintainers",areaMaintainers)]
+def teamData := #[("teamMembers", teamMembers), ("leadMaintainer", leadMaintainer), ("techLeads", techLeads), ("areaMaintainers",areaMaintainers)]
 
 block_component +directive teamDiv (whichTeam : String) where
   toHtml _id _json _goI _goB _contents := do
@@ -120,7 +122,8 @@ The maintainer team is responsible for the quality of the codebase, establishing
 
 The lead maintainer coordinates the overall work of the maintainer team and oversees the project's repositories.
 
-- Fabrizio Montesi, University of Southern Denmark and Danish Institute for Advanced Study.
+:::teamDiv "leadMaintainer"
+:::
 
 # Technical leads
 
