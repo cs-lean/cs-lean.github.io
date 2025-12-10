@@ -36,6 +36,6 @@ img.sponsor-logo {
 }
 
 .dark-theme .sponsor-logo {
-    filter: invert(1) brightness(10);
+    filter: invert(1);
 }
 

@@ -17,8 +17,8 @@ def sponsorsContent : Array Sponsor := #[
   --  link := "https://aws.amazon.com" },
   { name := "Google", logo := "/static/png/deepmind.png",
     link := "https://deepmind.google" },
-  { name := "University of Southern Denmark",
-    logo := "/static/png/sdu.png", link := "https://www.sdu.dk/" },
+  { name := "FORM – Centre for Formal Methods and Future Computing",
+    logo := "/static/png/form.png", link := "https://www.sdu.dk/form" },
   { name := "Stanford Center for Automated Reasoning",
     logo := "/static/png/centaur.png",
     link := "https://centaur.stanford.edu"}
