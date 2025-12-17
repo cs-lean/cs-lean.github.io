@@ -13,8 +13,8 @@ namespace Page
 namespace Home
 
 def sponsorsContent : Array Sponsor := #[
-  -- { name := "Amazon", logo := "/static/png/aws.png",
-  --  link := "https://aws.amazon.com" },
+  { name := "Amazon", logo := "/static/png/aws.png",
+    link := "https://aws.amazon.com" },
   { name := "Google", logo := "/static/png/deepmind.png",
     link := "https://deepmind.google" },
   { name := "FORM – Centre for Formal Methods and Future Computing",
