@@ -21,6 +21,10 @@ def footer [MonadStateOf Component.State m] [Monad m] : m Html := do
           <a href=".">
             {{ Icon.cslibLogo "var(--color-text)" (some 300) (some 80) (strokeWidth := 10) }}
           </a>
+          <a href="https://www.renaissancephilanthropy.org/initiatives" target="_blank" class="renphil-footer-link">
+            <img src="/static/svg/renphil.svg" alt="Renaissance Philanthropy" width="160" class="renphil-footer-logo renphil-footer-logo-light" />
+            <img src="/static/svg/renphil-dark.svg" alt="Renaissance Philanthropy" width="160" class="renphil-footer-logo renphil-footer-logo-dark" />
+          </a>
         </nav>
 
         <nav class="footer-column" aria-label="LEAN">

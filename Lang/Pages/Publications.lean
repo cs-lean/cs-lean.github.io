@@ -19,6 +19,9 @@ structure Author where
   name : String
   url : Option String := none
 
+instance : Coe String Author where
+ coe name := ⟨name, none⟩
+
 def Author.toHtml (author : Author) : Html :=
   match author.url with
   | none => author.name
@@ -43,9 +46,6 @@ def Publication.toHtml (pub : Publication) : Html := {{
   </span>
 }}
 
-instance : Coe String Author where
-  coe name := ⟨name, none⟩
-
 namespace Authors
 
 def clark : Author := ⟨"Clark Barrett", some "https://theory.stanford.edu/~barrett/"⟩
@@ -62,9 +62,6 @@ def christopher : Author := ⟨"Christopher Henson", none⟩
 end Authors
 
 open Authors
-
-instance : Coe String Author where
- coe name := ⟨name, none⟩
 
 def pubs : Array Publication := #[
   { title := "CSLib: The Lean Computer Science Library"
