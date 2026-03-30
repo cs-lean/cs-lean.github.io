@@ -18,10 +18,10 @@ jobs:
 
     steps:
       - name: Checkout cs-lean.github.io
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Checkout cslib
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           repository: leanprover/cslib
           path: cslib
@@ -61,7 +61,7 @@ jobs:
       #     cp -r cslib/docs/doc/* _cslib.org/api/
 
       - name: Upload pages artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v6
         with:
           path: '_cslib.org'
 
