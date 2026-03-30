@@ -13,8 +13,8 @@ open Verso.Genre.Blog (Page)
 
 # Roadmap
 
-While this proposal seeks two years of funding, we include below a three-year roadmap for context and transparency.
-This is a conservative roadmap—we hope to move more quickly if possible.
+While this proposal seeks two years of funding, we include below a three-year roadmap for context and
+transparency. This is a conservative roadmap—we hope to move more quickly if possible.
 
 1. *Formalizing CS Foundations*
 

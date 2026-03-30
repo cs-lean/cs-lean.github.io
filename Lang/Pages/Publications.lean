@@ -57,6 +57,7 @@ def alexandre : Author := ⟨"Alexandre Rademaker", some "https://arademaker.git
 def sorrachai : Author := ⟨"Sorrachai Yingchareonthawornchai", none⟩
 def leo : Author := ⟨"Leonardo de Moura", some "http://leodemoura.github.io/"⟩
 def marco : Author := ⟨"Marco Peressotti", some "https://marcoperessotti.com/"⟩
+def christopher : Author := ⟨"Christopher Henson", none⟩
 
 end Authors
 
@@ -75,6 +76,11 @@ def pubs : Array Publication := #[
     authors := [fabrizio, marco, alexandre]
     links := [⟨"arXiv", "https://arxiv.org/abs/2602.15409"⟩]
     info := "arXiv:2602.15409, 2026"
+  },
+  { title := "Computer Science as Infrastructure: the Spine of the Lean Computer Science Library (CSLib)"
+    authors := [christopher, fabrizio]
+    links := [⟨"arXiv", "https://arxiv.org/abs/2602.15078"⟩]
+    info := "arXiv:2602.15078, 2026"
   }
 ]
 

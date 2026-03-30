@@ -31,8 +31,8 @@ block_component +directive hero where
                 </p>
               </div>
               <div class="hero-buttons reveal transition-delay-large">
-                <a class="hero-button button secondary" href="/roadmap/">
-                 {{ Icon.arrowForward "25" "var(--color-primary)" }} "Roadmap"</a>
+                <a class="hero-button button secondary" href="https://arxiv.org/abs/2602.04846">
+                 {{ Icon.arrowForward "25" "var(--color-primary)" }} "Whitepaper"</a>
                 <a class="hero-button button secondary" href="https://leanprover.github.io/cslib/docs/">
                  {{ Icon.book (fill := "var(--color-primary)") (some 25) }} "API"</a>
               </div>
