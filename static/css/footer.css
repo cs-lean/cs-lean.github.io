@@ -136,6 +136,27 @@ input:checked + .switch-container .slider::before {
     border-top: 1px solid oklch(0.32 0 0 / 1);
 }
 
+.renphil-footer-link {
+    display: flex;
+    justify-content: center;
+}
+
+.renphil-footer-logo {
+    margin-top: var(--space-2);
+}
+
+.renphil-footer-logo-dark {
+    display: none;
+}
+
+.dark-theme .renphil-footer-logo-light {
+    display: none;
+}
+
+.dark-theme .renphil-footer-logo-dark {
+    display: block;
+}
+
 .dark-theme .footer-socials {
     stroke: var(--color-white);
 }

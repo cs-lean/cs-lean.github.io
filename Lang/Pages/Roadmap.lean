@@ -13,8 +13,8 @@ open Verso.Genre.Blog (Page)
 
 # Roadmap
 
-While this proposal seeks two years of funding, we include below a three-year roadmap for context and transparency.
-This is a conservative roadmap—we hope to move more quickly if possible.
+While this proposal seeks two years of funding, we include below a three-year roadmap for context and
+transparency. This is a conservative roadmap—we hope to move more quickly if possible.
 
 1. *Formalizing CS Foundations*
 
@@ -28,7 +28,7 @@ This is a conservative roadmap—we hope to move more quickly if possible.
 2. *Reasoning about Code*
 
    - *6 Months:* First version of Boole defined, with the ability to use Lean constructs in specifications and with support for cost semantics.
-   - *1 Year:* First version of Boole backend complete, with a limited TCB and with a selection of hammers for automation.
+   - *1 Year:* First version of Boole backend complete, with a limited trusted computing base (TCB) and with a selection of hammers for automation.
    - *18 Months:* Extensions to Boole for concurrency and low-level code.
    - *2 Years:* More mature backend. TCB limited to semantics of Boole and the Lean kernel. Most Boole programs verified automatically via sophisticated hammers, including AI hammers.
    - *30 Months:* Prototype verification system for a real programming language (e.g., Python, Rust) using Boole as an IVL.

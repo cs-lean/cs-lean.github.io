@@ -24,8 +24,6 @@ def langSite : Site :=
     "CodeOfConduct" Lang.Pages.CodeOfConduct
     "License" Lang.Pages.License
 
-    "documentation" Lang.Pages.Documentation
-
     "publications" Lang.Pages.Publications
 
 def main (args : List String) : IO UInt32 :=
