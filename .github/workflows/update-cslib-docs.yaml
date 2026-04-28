@@ -61,7 +61,7 @@ jobs:
       #     cp -r cslib/docs/doc/* _cslib.org/api/
 
       - name: Upload pages artifact
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v5
         with:
           path: '_cslib.org'
 
@@ -82,4 +82,4 @@ jobs:
       - name: Deploy to GitHub Pages
         if: github.ref == 'refs/heads/main'
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
