@@ -31,7 +31,7 @@ private def truncateHtml (html : Html) (maxLength : Nat) : Html :=
         let newAcc := if acc.isEmpty then word else acc ++ " " ++ word
         if newAcc.length > maxLength
           then if acc.isEmpty
-            then word.take maxLength
+            then (word.take maxLength).toString
             else acc ++ "..."
         else buildResult newAcc rest
     let truncatedText := buildResult "" words

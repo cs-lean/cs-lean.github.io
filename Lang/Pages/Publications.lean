@@ -87,7 +87,15 @@ def pubList : Html := {{
   </ul>
 }}
 
-#doc (Page) "Learning Resources" =>
+def videoEmbed : Html := {{
+  <iframe width="560" height="315"
+    src="https://www.youtube.com/embed/videoseries?si=hnkmv4VJwttdpXvu&list=PLtlBXrgM1AlPIFwMaM2eDaIyK03z3Hxk-"
+    title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="allowfullscreen"></iframe>
+}}
+
+#doc (Page) "News & Resources" =>
 
 %%%
 showInNav := true
@@ -95,7 +103,12 @@ showInNav := true
 
 # API Documentation
 
-For the library's API reference, see the [API documentation](https://leanprover.github.io/cslib/docs/). This documentation is automatically updated on every new commit to the library's main branch.
+For the library's API reference, see the [API documentation](https://leanprover.github.io/cslib/docs/). It is kept in sync as the library evolves.
+
+# CSLib Community Meetings
+
+:::blob videoEmbed
+:::
 
 # Papers
 

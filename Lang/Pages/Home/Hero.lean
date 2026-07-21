@@ -27,7 +27,7 @@ block_component +directive hero where
               <div class="hero-branding reveal">
                 {{ Icon.cslibLogo "var(--color-text)" (some 600) (some 240) (strokeWidth := 4) }}
                 <p class="hero-tagline reveal transition-delay-medium">
-                  "A Focused Effort on Formalizing Computer Science in Lean"
+                  "An open-source library of reusable components for proving theorems in computer science and writing formally verified code in the Lean programming language and proof assistant."
                 </p>
               </div>
               <div class="hero-buttons reveal transition-delay-large">
@@ -38,19 +38,20 @@ block_component +directive hero where
               </div>
             </div>
             <div class="hero-right">
+              <h2 class="focus-list-title">"Why CSLib"</h2>
               <ul class="focus-list">
                 <li><i>{{ Icon.clock (fill := "var(--color-text)") }}</i>
-                 <div class="text"><strong>"Formalizing CS Foundations"</strong>
-                 <br/>"Including computational models and complexity analysis tools."</div></li>
+                 <div class="text"><strong>"Formalized foundations of computer science"</strong>
+                 <br/>"Computational models, complexity, and core theory across many areas of CS."</div></li>
                 <li><i>{{ Icon.link (fill := "var(--color-text)") }}</i>
-                 <div class="text"><strong>"Reasoning about Code"</strong>
-                 <br/>"Builds on the rich tradition of deductive verification techniques."</div></li>
+                 <div class="text"><strong>"A toolkit for reasoning about programs"</strong>
+                 <br/>"Verify properties of your code, building on decades of deductive verification."</div></li>
                 <li><i>{{ Icon.book (fill := "var(--color-text)") (some 25) }}</i>
-                <div class="text"><strong>"Repository of Verified Code"</strong>
-                <br/>"Cover all algorithms and data structures that a typical CS undergraduate encounter."</div></li>
+                <div class="text"><strong>"A repository of verified algorithms and data structures"</strong>
+                <br/>"Reusable, machine-checked implementations you can build on."</div></li>
                 <li><i>{{ Icon.activity (fill := "var(--color-text)") }}</i>
-                <div class="text"><strong>"AI Integration"</strong>
-                <br/>"Training datasets and AI-assisted contribution tools"</div></li>
+                <div class="text"><strong>"A foundation for trustworthy AI"</strong>
+                <br/>"A shared vocabulary to train models on."</div></li>
               </ul>
             </div>
           </div>

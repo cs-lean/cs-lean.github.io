@@ -23,7 +23,7 @@ def team (teamMembemr : Member) : HtmlM Page Html := do
         </div>
         <div class="content-area">
             <div class="member-details">
-                <h3 class="member-name">{{teamMembemr.name}}</h3>
+                <div class="member-name">{{teamMembemr.name}}</div>
                 <p class="member-role">{{teamMembemr.role}}</p>
             </div>
         </div>
