@@ -35,7 +35,7 @@ block_component +directive pageTitle (level : Nat) (title : String) where
 
 block_component +directive header (level : Nat) (title : String) where
   toHtml _ _ _ _ _ := do
-    return Html.tag s!"h{level}" #[("id", defaultPostName.slugify title)] (.text true title)
+    return Html.tag s!"h{level}" #[("id", Verso.Genre.Blog.slugifyTitle title)] (.text true title)
 
 end Components
 end Lang

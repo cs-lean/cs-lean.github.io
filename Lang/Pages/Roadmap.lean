@@ -11,34 +11,37 @@ open Verso.Genre.Blog (Page)
 
 #doc (Page) "Roadmap" =>
 
-# Roadmap
+# Two pillars, four directions
 
-While this proposal seeks two years of funding, we include below a three-year roadmap for context and
-transparency. This is a conservative roadmap—we hope to move more quickly if possible.
+CSLib is built around two pillars, first laid out in the [white paper](https://arxiv.org/abs/2602.04846):
 
-1. *Formalizing CS Foundations*
+*Pillar 1 — Formalizing computer science in Lean.* A unified, coherent
+formal treatment of the field's essential concepts: models of computation, algorithms and data structures, programming-language semantics, concurrency, and the specification logics used to reason about them.
 
-   - *6 Months:* Basic models of computation such as lambda-calculus and Turing machines defined, as well as basic machinery for complexity analysis of algorithms written in Boole.
-   - *1 Year:* Extension of formalization base into one covering all proofs in an undergraduate algorithms text.
-   - *18 Months:* Extending the base so that it can handle arguments (including randomization- and approximation-based arguments) commonly used to analyze research-level algorithms, as well as semantic machinery (such as concurrent separation logic or specific modal logics) needed to verify real-world systems.
-   - *2 Years:* Demonstration of our machinery in the task of fully formalizing a nontrivial set of theoretical CS papers.
-   - *30 Months:* Extension and application of our machinery to proofs of several real-world systems.
-   - *3 Years:* Mature framework that can be used to formalize and prove all arguments in a typical CS theory paper and a typical real-world system verification project.
+*Pillar 2 — Reasoning about everyday code.* Infrastructure that makes Lean practical for verifying real programs, centered on Boole — an intermediate verification language into which mainstream imperative code can be translated and then checked using CSLib's Lean-based machinery.
 
-2. *Reasoning about Code*
+The pillars are the library's stable scientific identity: they describe what CSLib is independently of any funding phase or milestone. Together, they unpack into four long-term directions the project keeps advancing:
 
-   - *6 Months:* First version of Boole defined, with the ability to use Lean constructs in specifications and with support for cost semantics.
-   - *1 Year:* First version of Boole backend complete, with a limited trusted computing base (TCB) and with a selection of hammers for automation.
-   - *18 Months:* Extensions to Boole for concurrency and low-level code.
-   - *2 Years:* More mature backend. TCB limited to semantics of Boole and the Lean kernel. Most Boole programs verified automatically via sophisticated hammers, including AI hammers.
-   - *30 Months:* Prototype verification system for a real programming language (e.g., Python, Rust) using Boole as an IVL.
-   - *3 Years:* Full *CSLib* pipeline for a real programming language with a minimal TCB and with a high level of proof automation.
+- *Formalizing CS foundations* — deepening the coverage of models, semantics,
+  and logics under Pillar 1.
+- *Reasoning about code* — both algorithms written and verified directly in
+  Lean, and the Boole path for imperative code under Pillar 2.
+- *A repository of verified code* — the concrete output of both pillars:
+  a growing library of algorithms and data structures with machine-checked
+  correctness and complexity proofs, in Lean and in Boole.
+- *AI integration* — making CSLib available as high-quality data and
+  infrastructure for AI-assisted theorem proving, following the model
+  Mathlib has established.
 
-3. *Repository of Verified Code*
+# Where things stand
 
-   - *6 Months:* A few sample algorithms implemented in Boole.
-   - *1 Year:* A full algorithms textbook formalized in Boole.
-   - *18 Months:* Samples of concurrent and low-level programs formalized in Boole.
-   - *2 Years:* Extensive library for foundational CS formalized, including algorithms at different levels of abstraction.
-   - *30 Months:* Sample programs in real programming languages formalized and proved using *cslib*.
-   - *3 Years:* A significant real system verified using *CSLib*.
+CSLib is past its early bootstrapping phase. It is an active contributor community, a steady flow of pull requests, and ongoing public design discussion on Zulip. The project has also secured dedicated funding to accelerate progress over the next couple of years.
+
+That funding is organized around four operational goals. In the near term, effort is allocated across the pillars as follows:
+
+- *Sustaining organic growth.* Process, tooling, and documentation that keep contribution and review healthy as the community scales, benefitting both pillars.
+- *Visibility through external applications.* A small number of high-visibility projects built on CSLib that stress-test both pillars, demand new primitives, and contribute general results back into the library.
+- *Focused foundational investment.* Directly funded work on parts of each pillar that need sustained effort to mature — foundational semantics and specification infrastructure on the Pillar 1 side, the Boole verification pipeline on the Pillar 2 side.
+- *Coordination with the wider ecosystem.* Working alongside related Lean and formal-methods efforts so the primitives they need are in place, and so that their results feed back into CSLib.
+
+Concrete milestones and progress reports will be shared as this work matures. The [GitHub repository](https://github.com/leanprover/cslib) and our [Zulip channel](https://leanprover.zulipchat.com/#narrow/channel/513188-CSLib) are the best places to see what's actively being worked on.

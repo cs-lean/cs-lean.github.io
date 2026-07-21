@@ -519,13 +519,20 @@ body {
     }
 }
 
+.focus-list-title {
+    margin: 0 0 var(--space-6) 0;
+    font-size: var(--fs-lg);
+    font-weight: 700;
+    color: var(--color-text);
+}
+
 .focus-list {
     display: flex;
     margin: 0;
     padding: 0;
     list-style: none;
     flex-direction: column;
-    gap: 30px;
+    gap: 15px;
 }
 
 .focus-list li {
@@ -550,9 +557,9 @@ body {
 }
 
 #cslib-hero {
-    padding: 100px 50px;
+    padding: 60px 40px;
     margin: 0px 40px;
-    margin-top: 60px;
+    margin-top: 40px;
     border-radius: 10px;
 }
 
