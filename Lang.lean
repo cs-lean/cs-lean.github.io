@@ -22,7 +22,11 @@ def langSite : Site :=
     "governance" Lang.Pages.Governance
 
     "strategic-organizations" Lang.Pages.StrategicOrganizations
-    "initiative" Lang.Pages.Initiative
+    "initiative" Lang.Pages.Initiative /
+      "about" Lang.Pages.Initiative.About
+      "team" Lang.Pages.Initiative.Team
+      "roadmap" Lang.Pages.Initiative.Roadmap
+      "contact" Lang.Pages.Initiative.Contact
     "form" Lang.Pages.FORM
 
     "CodeOfConduct" Lang.Pages.CodeOfConduct

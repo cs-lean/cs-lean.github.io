@@ -344,8 +344,18 @@ nav.sub-navbar .navbar-container {
         background-color: var(--color-bg);
     }
 
+    /* Mobile sub-navbar: horizontal scrollable tab bar.
+       To revert to the FRO-style hidden submenu, replace this block with
+       `.sub-navbar { display: none; }` and add the subpages to .mobile-nav. */
     .sub-navbar {
-        display: none;
+        padding: var(--space-2) var(--space-4);
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .sub-navbar .nav-list {
+        flex-wrap: nowrap;
+        white-space: nowrap;
     }
 
     .desktop-menu {
