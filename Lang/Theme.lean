@@ -25,7 +25,8 @@ def isMarkdownPage : Path → Bool
   | _ => true
 
 def indexPage : Path → Bool
-  | #["Governance"] | #["about"] => true
+  | #["governance"] | #["about"] => true
+  | #["initiative"] | #["form"] => true
   | _ => false
 
 def needsTitle : Path → Bool

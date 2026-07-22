@@ -13,6 +13,8 @@ namespace Page
 namespace Home
 
 def sponsorsContent : Array Sponsor := #[
+  { name := "Coefficient Giving", logo := "/static/png/coefficient.png",
+    link := "https://www.coefficientgiving.org/" },
   { name := "Amazon", logo := "/static/png/aws.png",
     link := "https://aws.amazon.com" },
   { name := "Google", logo := "/static/png/deepmind.png",
