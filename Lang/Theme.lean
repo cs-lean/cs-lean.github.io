@@ -26,7 +26,7 @@ def isMarkdownPage : Path → Bool
 
 def indexPage : Path → Bool
   | #["governance"] | #["about"] => true
-  | #["initiative"] | #["form"] => true
+  | #["form"] => true
   | _ => false
 
 def needsTitle : Path → Bool
@@ -73,6 +73,7 @@ private def primaryTemplate (siteName : String) (extraHead : Html := .empty) : T
         {{ ← Components.noJSBar }}
         <header class="site-header">
           {{ ← buildNavBar }}
+          {{ ← buildSubNavBar }}
         </header>
         {{ ← param "content" }}
         {{ ← Components.footer }}
