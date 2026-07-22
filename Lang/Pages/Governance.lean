@@ -104,19 +104,6 @@ showInNav := true
 
 As explained on our [About](/about) page, "CSLib" refers to two distinct structures, and governance reflects that split. The *Initiative* at  [Renaissance Philanthropy](https://www.renaissancephilanthropy.org)  provides funding, staffing, and strategic support. The open-source library and community that builds and maintains the code, with its own governance, a steering committee and a body of maintainers, independent of RenPhil. The same person may hold roles in both, but the roles themselves remain distinct.
 
-# Team at Renphil
-
-The CSLib Initiative provides the professional resources to help the open-source project grow: funding, coordination, and strategic focus.
-
-## Employees
-
-:::teamDiv "renphilTeam"
-:::
-
-## Strategic Advisory Board
-
-The Strategic Advisory Board helps set the Initiative's direction and priorities. It is composed of the same members as the CSLib project's {page_link Lang.Pages.Governance "steering-committee"}[steering committee].
-
 # CSLib Project
 
 The open-source project is governed by two main bodies:
@@ -157,6 +144,20 @@ Area maintainers are trusted contributors who take ownership of specific areas o
 
 :::teamDiv "areaMaintainers"
 :::
+
+# Team at Renphil
+
+The CSLib Initiative provides the professional resources to help the open-source project grow: funding, coordination, and strategic focus.
+
+## Employees
+
+:::teamDiv "renphilTeam"
+:::
+
+## Strategic Advisory Board
+
+The Strategic Advisory Board helps set the Initiative's direction and priorities. It is composed of the same members as the CSLib project's {page_link Lang.Pages.Governance "steering-committee"}[steering committee].
+
 
 # Contact
 

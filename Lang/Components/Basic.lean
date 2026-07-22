@@ -57,9 +57,11 @@ def setAttributeOption (attr : String) (value : Option String) (html : Html) : H
 
 /--
 Converts a string into a lowercase, hyphen-separated "slug" suitable for use in URLs or IDs.
+Delegates to Verso's `slugifyTitle`, which lowercases, turns spaces into hyphens, and drops
+punctuation — so anchors stay clean (e.g. "One name, two things" → "one-name-two-things").
 -/
 def createSlug (str : String) : String :=
-  str.toLower.replace " " "-"
+  Verso.Genre.Blog.slugifyTitle str
 
 /--
 Returns a string if the condition is true, otherwise returns an empty string.

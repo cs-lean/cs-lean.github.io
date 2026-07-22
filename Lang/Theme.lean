@@ -25,6 +25,7 @@ def isMarkdownPage : Path → Bool
   | _ => true
 
 def indexPage : Path → Bool
+  | #["Governance"] | #["about"] => true
   | _ => false
 
 def needsTitle : Path → Bool
@@ -87,8 +88,13 @@ Templates that are basically pages with markdown content.
 private def markdownPageTemplate : TemplateM Html := do
   let content ← param "content"
   let title ← param "title"
-  let nav := collectH1 content
   let path ← currentPath
+  -- Anchors must be resolved against the page's own path (not the <base href>),
+  -- matching how Verso's `page_link` renders in-page links (e.g. "Governance/#slug").
+  let linkPrefix := match path.back? with
+    | some seg => s!"{seg}/"
+    | none => ""
+  let nav := collectH1 content linkPrefix
 
   let postPageContent :=
     if nav.isSome ∧ indexPage path
