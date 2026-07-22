@@ -11,13 +11,10 @@ namespace Components
 /--
 The `aside` component is used to create a sidebar with a title and content.
 -/
-def aside (title : String) (content : Html): Html :=
+def aside (_title : String) (content : Html): Html :=
   {{
     <aside>
       <nav class="post-index">
-        <h1 class="title">
-          {{ title }}
-        </h1>
         {{ content }}
       </nav>
     </aside>

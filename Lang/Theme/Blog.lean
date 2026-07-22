@@ -35,7 +35,7 @@ partial def addSlug : Html → Html
     | _ => .tag t a (addSlug h)
   | .seq h => .seq (h.map addSlug)
 
-partial def collectH1 (html : Html) : Option Html :=
+partial def collectH1 (html : Html) (linkPrefix : String := "") : Option Html :=
     let res := (collect [] html |>.reverse)
     if ¬ res.isEmpty then
       let (html, _) := compact 2 res
@@ -62,7 +62,7 @@ partial def collectH1 (html : Html) : Option Html :=
       | (level, str) :: xs =>
         if level = current then
           let slug := createSlug str
-          let headingLink := Html.tag "a" #[("href", s!"#{slug}")] #[Html.text false str]
+          let headingLink := Html.tag "a" #[("href", s!"{linkPrefix}#{slug}")] #[Html.text false str]
 
           let (children, remaining) := compactChildren (level + 1) xs
           let item := if children.isEmpty then headingLink else Html.seq #[headingLink, Html.tag "ol" #[] (Html.seq children.toArray)]
