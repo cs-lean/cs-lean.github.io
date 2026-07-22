@@ -19,12 +19,16 @@ def langSite : Site :=
 
     "roadmap" Lang.Pages.Roadmap
 
-    "Governance" Lang.Pages.Governance
+    "governance" Lang.Pages.Governance
+
+    "strategic-organizations" Lang.Pages.StrategicOrganizations
+    "initiative" Lang.Pages.Initiative
+    "form" Lang.Pages.FORM
 
     "CodeOfConduct" Lang.Pages.CodeOfConduct
     "License" Lang.Pages.License
 
-    "publications" Lang.Pages.Publications
+    "resources" Lang.Pages.Publications
 
 def main (args : List String) : IO UInt32 :=
   blogMain (Lang.theme "Lean Lang") langSite {} args

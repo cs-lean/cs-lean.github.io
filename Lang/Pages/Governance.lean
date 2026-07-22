@@ -1,100 +1,9 @@
 import VersoBlog
 import Lang.Components.Team
+import Lang.Components.TeamData
 open Verso.Output Html
 open Lang Components
 open Verso.Genre.Blog (Page page_link)
-
-def leo : Member := {
-  url := "/static/team/leo.jpg",
-  name := "Leo de Moura",
-  role := "Lean Chief Architect, Co-Founder of Lean FRO, and Amazon",
-}
-
-def swarat : Member := {
-  url := "/static/team/swarat.jpg",
-  name := "Swarat Chaudhuri",
-  role := "Google DeepMind and UT Austin",
-}
-
-def clark : Member := {
-  url := "/static/team/clark-barrett.jpg",
-  name := "Clark Barrett",
-  role := "Stanford University and Amazon",
-}
-
-def fabrizio : Member := {
-  url := "/static/team/fabrizio-mini.jpg",
-  name := "Fabrizio Montesi",
-  role := "University of Southern Denmark and Danish Institute for Advanced Study",
-}
-
-def jim : Member := {
-  url := "/static/team/jim.jpg",
-  name := "Jim Grundy",
-  role := "Amazon",
-}
-
-def kohli : Member := {
-  url := "/static/team/pushmeet-kohli.jpg",
-  name := "Pushmeet Kohli",
-  role := "Google DeepMind",
-}
-
-def sorrachai : Member := {
-  url := "/static/team/sorrachai.jpg",
-  name := "Sorrachai Yingchareonthawornchai",
-  role := "ETH Zurich",
-}
-
-def arademaker : Member := {
-  url := "/static/team/rademaker.jpg",
-  name := "Alexandre Rademaker",
-  role := "CSLib Director and Professor at FGV/EMAp",
-}
-
-def kim : Member := {
-  url := "/static/team/kim.jpg",
-  name := "Kim Morrison",
-  role := "Lean FRO. Continuous Integration and Deployment (CI/CD) with upstream (Lean, mathlib)",
-}
-
-def henson : Member := {
-  url := "/static/team/chris-henson.jpg",
-  name := "Chris Henson",
-  role := "Drexel University. Lambda calculus, metaprogramming",
-}
-
-
-def SteeringCommittee : Array Member :=
-  #[clark, swarat, jim, kohli, leo, fabrizio]
-
-def leadMaintainer : Array Member := #[fabrizio]
-
-def renphilTeam : Array Member := #[arademaker]
-
-def techLeads : Array Member := #[arademaker, sorrachai]
-
-def areaMaintainers : Array Member := #[henson, kim]
-
-def teamData := #[
-  ("renphilTeam", renphilTeam),
-  ("SteeringCommittee", SteeringCommittee),
-  ("leadMaintainer", leadMaintainer),
-  ("techLeads", techLeads),
-  ("areaMaintainers",areaMaintainers)]
-
-block_component +directive teamDiv (whichTeam : String) where
-  toHtml _id _json _goI _goB _contents := do
-    let some (_, data) := teamData.find? (·.1 == whichTeam)
-      | Verso.reportError s!"Didn't find '{whichTeam}'"
-        return .empty
-    return {{
-        <div class="members-card">
-          {{
-            ← data.mapM Components.team
-          }}
-        </div>
-    }}
 
 #doc (Page) "Governance" =>
 
@@ -102,7 +11,7 @@ block_component +directive teamDiv (whichTeam : String) where
 showInNav := true
 %%%
 
-As explained on our [About](/about) page, "CSLib" refers to two distinct structures, and governance reflects that split. The *Initiative* at  [Renaissance Philanthropy](https://www.renaissancephilanthropy.org)  provides funding, staffing, and strategic support. The open-source library and community that builds and maintains the code, with its own governance, a steering committee and a body of maintainers, independent of RenPhil. The same person may hold roles in both, but the roles themselves remain distinct.
+"CSLib" refers to two distinct structures, and governance reflects that split. The [CSLib Initiative](/initiative/) provides funding, staffing, and strategic support. The open-source library and community that builds and maintains the code has its own governance — a steering committee and a body of maintainers — independent of RenPhil. The same person may hold roles in both, but the roles themselves remain distinct.
 
 # CSLib Project
 
@@ -144,20 +53,6 @@ Area maintainers are trusted contributors who take ownership of specific areas o
 
 :::teamDiv "areaMaintainers"
 :::
-
-# Team at Renphil
-
-The CSLib Initiative provides the professional resources to help the open-source project grow: funding, coordination, and strategic focus.
-
-## Employees
-
-:::teamDiv "renphilTeam"
-:::
-
-## Strategic Advisory Board
-
-The Strategic Advisory Board helps set the Initiative's direction and priorities. It is composed of the same members as the CSLib project's {page_link Lang.Pages.Governance "steering-committee"}[steering committee].
-
 
 # Contact
 
