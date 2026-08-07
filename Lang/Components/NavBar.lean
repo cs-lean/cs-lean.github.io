@@ -101,8 +101,6 @@ def navBar {m} [MonadStateOf Component.State m] [Monad m] (leftItems : Array Ite
             </li>
             <li><span class="divider" /></li>
             {{ rightItems.map navItem }}
-            <li><span class="divider" /></li>
-            <li>{{ renphilBranding }}</li>
           </ul>
         </menu>
       </div>
@@ -111,7 +109,6 @@ def navBar {m} [MonadStateOf Component.State m] [Monad m] (leftItems : Array Ite
         <ul class="nav-list">
           {{ leftItems.map navItem }}
           {{ menuItems.map navItem }}
-          <li>{{ renphilContent }}</li>
         </ul>
       </menu>
     </nav>

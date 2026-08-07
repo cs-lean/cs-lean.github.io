@@ -869,3 +869,18 @@ a.card-href.card.main-learn-card {
     color: var(--color-text) !important;
 }
 
+.light-display {
+    display: block;
+}
+
+.dark-display {
+    display: none;
+}
+
+.dark-theme .light-display {
+    display: none;
+}
+
+.dark-theme .dark-display {
+    display: block;
+}

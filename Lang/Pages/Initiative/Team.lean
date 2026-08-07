@@ -21,3 +21,6 @@ The CSLib Initiative provides the professional resources to help the open-source
 # Strategic Advisory Board
 
 The Strategic Advisory Board helps set the Initiative's direction and priorities. It is composed of the same members as the CSLib project's {page_link Lang.Pages.Governance "steering-committee"}[steering committee].
+
+:::teamDiv "SteeringCommittee"
+:::

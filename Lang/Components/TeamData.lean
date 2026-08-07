@@ -29,7 +29,8 @@ def clark : Member := {
 def fabrizio : Member := {
   url := "/static/team/fabrizio-mini.jpg",
   name := "Fabrizio Montesi",
-  role := "University of Southern Denmark and Danish Institute for Advanced Study",
+  role := "CSLib Lead Maintainer, FORM Director",
+  link := "https://www.fabriziomontesi.com"
 }
 
 def jim : Member := {

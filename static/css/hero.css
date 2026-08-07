@@ -56,13 +56,13 @@ body {
 .hero-buttons {
     display: flex;
     gap: var(--space-4);
-    margin-top: var(--space-8);
+    margin-top: var(--space-4);
     background-color: transparent;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
-.hero-button {
-    width: 170px;
-}
+.hero-button {}
 
 .hero-button.primary {
     background-color: #333;

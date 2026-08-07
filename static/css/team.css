@@ -94,19 +94,25 @@
 
 .member-name {
     overflow-wrap: anywhere;
-    font-size: var(--fs-base) !important;
+    font-size: var(--fs-sm) !important;
     font-weight: 500 !important;
     color: var(--color-text) !important;
     margin-bottom: 8px !important;
     letter-spacing: -0.01em !important;
     line-height: 1.2 !important;
+    display: flex;
+    align-items: center;
+}
+
+.member-name span {
+    flex: 1;
+    text-align: center;
 }
 
 .member-role {
-    font-size: var(--fs-sm) !important;
     color: var(--color-text-primary) !important;
     font-weight: 400 !important;
-    margin-bottom: 20px !important;
+    margin-bottom: 0em !important;
     text-transform: uppercase !important;
     letter-spacing: 0.05em !important;
 }
@@ -195,7 +201,7 @@
     gap: 10px;
     justify-content: center;
     overflow: visible;
-    padding-top: 50px;
+    padding-top: 1em;
 }
 
 .image-container img {

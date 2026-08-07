@@ -11,25 +11,21 @@ open Verso.Genre.Blog (Page page_link)
 showInNav := true
 %%%
 
-"CSLib" refers to two distinct structures, and governance reflects that split. The [CSLib Initiative](/initiative/) provides funding, staffing, and strategic support. The open-source library and community that builds and maintains the code has its own governance — a steering committee and a body of maintainers — independent of RenPhil. The same person may hold roles in both, but the roles themselves remain distinct.
-
-# CSLib Project
-
-The open-source project is governed by two main bodies:
+CSLib is governed by two main bodies:
 
 - A {page_link Lang.Pages.Governance "steering-committee"}[steering committee], responsible for securing financial support and guiding the overall vision of the project.
 - A {page_link Lang.Pages.Governance "maintainers"}[maintainer team], responsible for curating, expanding, and maintaining the code repository and its technical direction.
 
 These groups work together to define the project's roadmap and foster a welcoming and productive environment. New members may be invited based on project needs and individual merit.
 
-## Steering committee
+# Steering committee
 
 The steering committee guides the overall vision of the project and secures its financial support. Its members also form the Strategic Advisory Board of the CSLib Initiative.
 
 :::teamDiv "SteeringCommittee"
 :::
 
-## Maintainers
+# Maintainers
 
 The maintainer team is responsible for the quality of the codebase, establishing technical standards and ensuring coherence across contributions. It is organized into a lead maintainer, technical leads, and area maintainers.
 

@@ -31,14 +31,16 @@ block_component +directive hero where
                 </p>
               </div>
               <div class="hero-buttons reveal transition-delay-large">
-                <a class="hero-button button secondary" href="https://arxiv.org/abs/2602.04846">
-                 {{ Icon.arrowForward "25" "var(--color-primary)" }} "Whitepaper"</a>
                 <a class="hero-button button secondary" href="https://leanprover.github.io/cslib/docs/">
                  {{ Icon.book (fill := "var(--color-primary)") (some 25) }} "API"</a>
+                <a class="hero-button button secondary" href="https://github.com/leanprover/cslib">
+                 {{ Icon.github }} "Code"</a>
+                <a class="hero-button button secondary" href="https://arxiv.org/abs/2602.04846">
+                 {{ Icon.arrowForward "25" "var(--color-primary)" }} "Whitepaper"</a>
               </div>
             </div>
             <div class="hero-right">
-              <h2 class="focus-list-title">"Why CSLib"</h2>
+              -- <h2 class="focus-list-title">"Why CSLib"</h2>
               <ul class="focus-list">
                 <li><i>{{ Icon.clock (fill := "var(--color-text)") }}</i>
                  <div class="text"><strong>"Formalized foundations of computer science"</strong>

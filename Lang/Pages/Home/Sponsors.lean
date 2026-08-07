@@ -13,14 +13,17 @@ namespace Page
 namespace Home
 
 def sponsorsContent : Array Sponsor := #[
-  { name := "Coefficient Giving", logo := "/static/png/coefficient.png",
-    link := "https://www.coefficientgiving.org/" },
   { name := "Amazon", logo := "/static/png/aws.png",
     link := "https://aws.amazon.com" },
+  { name := "Coefficient Giving", logo := "/static/png/coefficient.png",
+    link := "https://www.coefficientgiving.org/" },
   { name := "Google", logo := "/static/png/deepmind.png",
     link := "https://deepmind.google" },
   { name := "FORM – Centre for Formal Methods and Future Computing",
     logo := "/static/png/form.png", link := "https://www.sdu.dk/form" },
+  { name := "Renaissance Philantrophy",
+    logo := "/static/svg/renphil.svg", logoDark := "/static/svg/renphil-dark.svg",
+    link := "https://www.renaissancephilanthropy.org/initiatives" },
   { name := "Stanford Center for Automated Reasoning",
     logo := "/static/png/centaur.png",
     link := "https://centaur.stanford.edu"}
