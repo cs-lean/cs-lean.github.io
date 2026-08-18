@@ -48,11 +48,12 @@ To automatically build upon file save, you can use a tool like `entr`:
 
 #### Previewing the Sites
 
-To preview the sites, run a local server with
+To preview the sites, run a local server with Verso's built-in server:
 
-    python3 -m http.server 8000 --directory _cslib.org 
+    lake exe verso-serve _cslib.org
 
 The rendered site is then available at [`http://localhost:8000/`](http://localhost:8000/).
+Pass `--port N` to use a different port.
 
 ### Troubleshooting
 
