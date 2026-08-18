@@ -17,11 +17,11 @@ open Verso.Genre.Blog (Page page_link)
 showInNav := false
 %%%
 
-The CSLib Initiative is a programme by [Renaissance Philanthropy](https://www.renaissancephilanthropy.org). Its mission is to support the growth of the CSLib open-source project, in the same way that the [Mathlib Initiative](https://mathlib-initiative.org/) supports Mathlib.
+The CSLib Initiative is a program of [Renaissance Philanthropy](https://www.renaissancephilanthropy.org). Its mission is to support the growth of the CSLib open-source project, in the same way that the [Mathlib Initiative](https://mathlib-initiative.org/) supports Mathlib.
 
 Use the navigation above to explore the Initiative:
 
 - [About](/initiative/about) — what the Initiative is and how it supports the project.
-- [Team](/initiative/team) — the RenPhil team and the Strategic Advisory Board.
+- [Team](/initiative/team) — the Renaissance Philanthropy team and the Strategic Advisory Board.
 - [Roadmap](/initiative/roadmap) — the operational goals guiding the Initiative's funding.
 - [Contact](/initiative/contact) — how to reach the Initiative.

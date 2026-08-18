@@ -13,7 +13,7 @@ You can read more about them below.
 
 # CSLib Initiative
 
-A programme by [Renaissance Philanthropy](https://www.renaissancephilanthropy.org) whose mission is to support the growth of the CSLib open-source project, providing funding, staffing, coordination, and strategic focus.
+A program of [Renaissance Philanthropy](https://www.renaissancephilanthropy.org) whose mission is to support the growth of the CSLib open-source project, providing funding, staffing, coordination, and strategic focus.
 
 Read more on the [CSLib Initiative](/initiative) page.
 
