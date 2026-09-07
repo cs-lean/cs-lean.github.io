@@ -47,8 +47,8 @@ def isPagePost : Path → Bool
 def home : SocialMeta :=
   { title := "CSLib",
     description := "A Focused Effort on Formalizing Computer Science in Lean",
-    image := "https://cs-lean.github.io/static/png/banner.png",
-    url   := "https://cs-lean.github.io",
+    image := "https://www.cslib.io/static/png/banner.png",
+    url   := "https://www.cslib.io",
     siteName := "CSLib",
     alt := "CSLib",
     articleCreator := "@cslib",
@@ -56,9 +56,9 @@ def home : SocialMeta :=
 
 def config : HeadConfig :=
   { description := home.description,
-    faviconWhite   := "https://cs-lean.github.io/static/favicon-light.ico",
-    faviconDark    := "https://cs-lean.github.io/static/favicon-dark.ico",
-    appleTouchIcon := "https://cs-lean.github.io/static/apple-touch-icon.png",
+    faviconWhite   := "https://www.cslib.io/static/favicon-light.ico",
+    faviconDark    := "https://www.cslib.io/static/favicon-dark.ico",
+    appleTouchIcon := "https://www.cslib.io/static/apple-touch-icon.png",
     color := "#8B4513"
   }
 

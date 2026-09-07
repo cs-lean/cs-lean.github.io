@@ -21,7 +21,7 @@ def team (member : Member) : HtmlM Page Html := do
   saveCss (include_str "../../static/css/team.css")
   let webLink :=
     if let some link := member.link then {{
-      <a href={{link}} title=s!"{member.name}'s website" class="member-link">{{ Icon.link (fill := "var(--color-text)") }}</a>
+      <a href={{link}} title=s!"{member.name}'s website" class="member-link">{{ Icon.link (fill := "var(--color-text)") (width := "18") }}</a>
     }} else ""
   return {{
     <div class="team-card" onclick="toggleCard(this)">

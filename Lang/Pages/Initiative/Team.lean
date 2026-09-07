@@ -13,7 +13,7 @@ showInNav := false
 
 The CSLib Initiative provides the professional resources to help the open-source project grow: funding, coordination, and strategic focus.
 
-# Employees
+# Staff
 
 :::teamDiv "renphilTeam"
 :::

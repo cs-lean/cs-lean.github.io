@@ -12,6 +12,7 @@ def leo : Member := {
   url := "/static/team/leo.jpg",
   name := "Leo de Moura",
   role := "Lean Chief Architect, Co-Founder of Lean FRO, and Amazon",
+  link := "https://leodemoura.github.io"
 }
 
 def swarat : Member := {
@@ -55,6 +56,21 @@ def arademaker : Member := {
   url := "/static/team/rademaker.jpg",
   name := "Alexandre Rademaker",
   role := "CSLib Director and Professor at FGV/EMAp",
+  link := "https://arademaker.github.io"
+}
+
+def guilherme : Member := {
+  url := "/static/team/guilherme-lima.jpg",
+  name := "Guilherme Lima",
+  role := "Research Engineer (postdoc, EMAp/FGV)",
+  link := "https://gflima.github.io"
+}
+
+def jesse : Member := {
+  url := "/static/team/jesse-alama.jpeg",
+  name := "Jesse Alama",
+  role := "Research Engineer",
+  link := "https://jessealama.net/"
 }
 
 def kim : Member := {
@@ -75,7 +91,7 @@ def SteeringCommittee : Array Member :=
 
 def leadMaintainer : Array Member := #[fabrizio]
 
-def renphilTeam : Array Member := #[arademaker]
+def renphilTeam : Array Member := #[arademaker, guilherme, jesse]
 
 def techLeads : Array Member := #[arademaker, sorrachai]
 

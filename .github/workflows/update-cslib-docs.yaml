@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout cs-lean.github.io
+      - name: Checkout cslib-community.github.io
         uses: actions/checkout@v6
 
       - name: Checkout cslib

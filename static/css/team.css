@@ -213,3 +213,19 @@
     padding: 0px;
     border-radius: 0px;
 }
+
+.member-link {
+    display: flex;
+    align-items: center;
+    flex: 0 0 auto;
+    line-height: 0;
+    background: none !important;
+    border-bottom: none !important;
+    text-decoration: none !important;
+}
+
+.member-link:hover {
+    background: none !important;
+    border-bottom: none !important;
+    opacity: 0.65;
+}
